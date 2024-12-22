@@ -1,0 +1,138 @@
+/* Main Page Styles */
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure no space around the body */
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-image: url('C:\\Users\\DELL\\hc_new\\Humble-Coders-new\\src\\assets\\Pages\\images\\background_img.jpg');/* Background color to avoid any white space around */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-container{
+  
+}
+.contact-page {
+   /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  min-height: 100vh; /* Full-screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container for Two Columns */
+.contact-container {
+  display: flex;
+  width: 70%; /* Adjusted overall width for a balanced layout */
+  height: 500px; /* Adjusted height */
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with slight transparency */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden; /* Prevents content overflow */
+  padding: 15px;
+  flex-wrap: wrap; /* Allows responsiveness */
+}
+
+/* Left Section: Team Image */
+.contact-image-box {
+  background-image: url('C:\Users\DELL\hc_new\Humble-Coders-new\src\assets\Pages\images\team_img2.jpg'); /* Replace with your image path */
+  background-size: contain; /* Ensures the entire image fits perfectly */
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 4; /* Width for team image */
+  height: 100%; /* Occupies full height of container */
+  border-radius: 8px;
+}
+
+/* Right Section: Contact Details */
+.contact-details-box {
+  flex: 6; /* Width for the contact details */
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.01); /* Black background with slight transparency */
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.contact-details-box h2 {
+  text-align: center;
+  font-size: 2rem; /* Reduced font size for a cleaner look */
+  margin-bottom: 10px;
+  color: #ffc107; /* Highlighted golden color */
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Dotted Separator */
+.dotted-separator {
+  border-top: 1px dotted #ffc107; /* Dotted separator */
+  margin: 15px 0; /* Adjust spacing between sections */
+}
+
+/* Contact Info Styling */
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem; /* Font size for a cleaner look */
+  line-height: 1.8;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Spacing between items */
+}
+
+.contact-info li i {
+  font-size: 1.5rem; /* Icon size */
+  color: #ffc107; /* Golden color for icons */
+  margin-right: 15px; /* Spacing between icon and text */
+}
+
+.contact-info .contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Social Media Icons */
+.contact-social-media {
+  display: flex;
+  background-image: 'C:\Users\DELL\hc_new\Humble-Coders-new\src\assets\Pages\images\instagram.png';
+  justify-content: center;
+  margin-top: 15px; /* Spacing above social media icons */
+}
+
+.contact-social-media a {
+  color: #ffc107;
+  font-size: 1.8rem; /* Size for social media icons */
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.contact-social-media a:hover {
+  color: #fff; /* Highlight effect on hover */
+}
+.bottom-right-image {
+  background-image: url('C:\Users\DELL\hc_new\Humble-Coders-new\src\assets\Pages\images\hc_logo.png');
+  position: absolute;
+  bottom: 10px; /* Distance from the bottom */
+  right: 10px; /* Distance from the right */
+  width: 150px; /* Adjust the size of the image */
+  height: auto;
+  object-fit: contain; /* Maintain aspect ratio */
+}
