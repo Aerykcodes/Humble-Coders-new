@@ -1,0 +1,82 @@
+.third-card-wrapper {
+  display: flex;
+  height: 100vh; /* Full height to center the card vertically */
+}
+
+.third-card {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  overflow: hidden;
+  transition: max-width 0.3s ease;
+}
+
+.third-card:hover {
+  max-width: 600px; /* Expand to 600px on hover */
+}
+
+.third-card-content {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.third-card-visible {
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the title */
+  background: url('your-image-url.jpg') center center/cover no-repeat;
+}
+
+.third-card-hidden {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  opacity: 0;
+  background-color: #f0f0f0; /* Background color for the extended part */
+  transition: opacity 0.3s ease;
+}
+
+.third-card:hover .third-card-hidden {
+  opacity: 1;
+}
+
+.third-card-title {
+  margin: 10px 0;
+  color: white; /* Ensure the title is visible on the background image */
+}
+
+.third-card-description {
+  margin: 0;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .third-card-wrapper {
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, -110px); /* Center on small screens */
+  }
+}
+
+/* Media query for large screens */
+@media (min-width: 769px) {
+  .third-card-wrapper {
+    justify-content: flex-start; /* Position the card to the left */
+    align-items: flex-start;
+    transform: translate(-170px, -850px); /* Custom position change for large screens */
+  }
+}
+
+/* Option for slight position change */
+.slight-position-change {
+  transform: translate(-10px, -10px); /* Slight position change option */
+}

@@ -1,4 +1,3 @@
-/* Navbar sticky using position: fixed */
 #navbar {
   position: fixed;
   top: 10;
@@ -31,6 +30,15 @@
   flex-wrap: nowrap; /* Prevent wrapping of navbar items */
 }
 
+/* Base styles for navbar items */
+.navbar .navbar-nav .nav-item .nav-link {
+  position: relative; /* Add relative positioning to allow for the absolute positioning of the box */
+  padding: 5px 12px; /* Base padding */
+  font-size: 18px; /* Increased font size */
+  transition: all 0.3s ease;
+  color: aliceblue;
+}
+
 /* Highlight the active tab with glowing effect */
 .nav-link.active {
   font-weight: bold;
@@ -38,16 +46,19 @@
   text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgba(255, 255, 255, 0.6);
 }
 
-/* Increase font size for navbar items */
-.navbar .navbar-nav .nav-item .nav-link {
-  padding: 5px 12px; /* Further reduced padding */
-  margin-right: -50px; /* Reduced space between items by applying negative margin */
-  font-size: 18px; /* Increased font size */
+/* Hover effect: expanding the box and centering the text */
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  background-color: rgba(64, 63, 63, 0.8);
+  border-radius: 20px;
+  width: auto; /* Remove fixed width */
+  padding: 5px 20px; /* Increase padding for a wider box */
   transition: all 0.3s ease;
+  display: inline-block; /* Ensures box takes the size of the text */
+  text-align: center; /* Center the text inside the box */
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  background-color: rgb(119, 119, 119, 0.8);
+  background-color: rgba(64, 63, 63, 0.8);
   border-radius: 20px;
 }
 

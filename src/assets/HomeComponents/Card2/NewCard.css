@@ -1,0 +1,82 @@
+.new-card-wrapper {
+  display: flex;
+  height: 100vh; /* Full height to center the card vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.new-card {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  overflow: hidden;
+  transition: max-width 0.3s ease-in-out; /* Smooth animation */
+}
+
+.new-card:hover {
+  max-width: 600px; /* Expand to 600px on hover */
+}
+
+.new-card-content {
+  display: flex;
+  flex-direction: row-reverse; /* Change direction to expand to the left */
+  height: 100%;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.new-card-visible {
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the title */
+  background: url('your-image-url.jpg') center center/cover no-repeat;
+}
+
+.new-card-hidden {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the content vertically and horizontally */
+  padding: 20px;
+  opacity: 0;
+  background-color: #f0f0f0; /* Background color for the extended part */
+  transition: opacity 0.3s ease-in-out;
+  text-align: center; /* Center the description text */
+}
+
+.new-card:hover .new-card-hidden {
+  opacity: 1;
+}
+
+.new-card-title {
+  margin: 10px 0;
+  color: white; /* Ensure the title is visible on the background image */
+}
+
+.new-card-description {
+  margin: 0;
+  text-align: center; /* Center the description text */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .new-card-wrapper {
+    transform: translate(0, -500px); /* Center on small screens */
+  }
+}
+
+/* Media query for large screens */
+@media (min-width: 769px) {
+  .new-card-wrapper {
+    transform: translate(200px, -500px); /* Custom position change for large screens */
+  }
+}
+
+/* Option for slight position change */
+.slight-position-change {
+  transform: translate(-10px, -10px); /* Slight position change option */
+}

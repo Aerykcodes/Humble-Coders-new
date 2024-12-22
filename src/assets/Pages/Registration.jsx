@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import './registration.css';
-import ContentSection from "../Content/ContentSection";
-import Accordion from "../Content/Accordion";
+import ContentSection from "../RegisterContent/ContentSection";
+import Accordion from "../RegisterContent/Accordion";
 
 export default function Registration() {
   return (
