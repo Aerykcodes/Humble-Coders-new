@@ -1,0 +1,30 @@
+.component-container {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .image {
+    width: 400px;
+    height: 300px;
+    object-fit: cover; /* Ensures the image fits well inside the box */
+  }
+  
+  .content-section {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .separator {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+  }
+  
+  .achievements-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  

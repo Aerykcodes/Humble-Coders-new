@@ -1,0 +1,78 @@
+/* Navbar sticky using position: fixed */
+#navbar {
+  position: fixed;
+  top: 10;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  background-color: rgba(67, 67, 67, 0.75); /* Black background with opacity */
+  width: 80%; /* Initial width is 80% */
+  max-width: 1200px; /* Ensures navbar doesn’t get too wide */
+  border-radius: 50px;
+  align-self: center;
+  font-size: 16px;
+  left: 50%; /* Centers the navbar */
+  transform: translateX(-50%); /* Centers the navbar */
+}
+
+/* Center content in the navbar */
+.navbar .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-evenly; /* Ensures items are side by side */
+  width: 100%;
+  margin: 0;
+  flex-wrap: nowrap; /* Prevent wrapping of navbar items */
+}
+
+/* Highlight the active tab with glowing effect */
+.nav-link.active {
+  font-weight: bold;
+  color: #494a4a !important;
+  text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Increase font size for navbar items */
+.navbar .navbar-nav .nav-item .nav-link {
+  padding: 5px 12px; /* Further reduced padding */
+  margin-right: -50px; /* Reduced space between items by applying negative margin */
+  font-size: 18px; /* Increased font size */
+  transition: all 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  background-color: rgb(119, 119, 119, 0.8);
+  border-radius: 20px;
+}
+
+body {
+  margin-top: 80px; /* To prevent the body content from being hidden behind the navbar */
+}
+
+/* Ensure navbar items stay side by side at all screen sizes */
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: row !important; /* Force horizontal layout on smaller screens */
+    justify-content: space-evenly;
+  }
+  #navbar {
+    width: 90%; /* Makes navbar width smaller on medium screens */
+  }
+}
+
+/* Ensures navbar is always side by side even on small screens */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: row !important; /* Force horizontal layout on small screens */
+    justify-content: space-evenly;
+  }
+  #navbar {
+    width: 95%; /* Makes navbar width even smaller on small screens */
+  }
+}

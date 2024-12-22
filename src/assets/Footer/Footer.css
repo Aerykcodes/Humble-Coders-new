@@ -1,0 +1,44 @@
+/* Ensure the page spans the full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Root container to manage layout */
+#app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  flex-grow: 1; /* Ensures the content area takes all remaining space */
+}
+
+/* Main content area */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Takes all available space */
+}
+
+/* Footer Styling */
+.footer {
+  margin-top: auto; /* Pushes the footer to the bottom */
+  background-color: #242424;
+  color: #ddd;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #007bff;
+  transition: ease-out;
+}
