@@ -7,7 +7,7 @@
 }
 
 /* Ensure no space around the body */
-html, body {
+.main-container-Contact{
   height: 100%;
   width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrolling */

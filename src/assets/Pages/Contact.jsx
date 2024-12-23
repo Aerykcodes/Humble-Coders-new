@@ -3,13 +3,11 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import logo from '../../assets/Pages/images/hc_logo.png';
 import { FaPhone, FaEnvelope, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-
-
 import "./Contact.css";
 
 export default function Contact() {
   return (
-    <div className="main-container">
+    <div className="main-container-Contact">
       <Navbar />
 
       <div className="contact-page">
