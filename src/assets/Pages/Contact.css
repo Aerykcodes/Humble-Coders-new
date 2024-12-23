@@ -11,7 +11,7 @@ html, body {
   height: 100%;
   width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  background-image: url('C:\\Users\\DELL\\hc_new\\Humble-Coders-new\\src\\assets\\Pages\\images\\background_img.jpg'); /* Background color to avoid any white space around */
+  background-image: url('./images/background_img.jpg'); /* Background color to avoid any white space around */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@ html, body {
 
 /* Left Section: Team Image */
 .contact-image-box {
-  background-image: url('C:\\Users\\DELL\\hc_new\\Humble-Coders-new\\src\\assets\\Pages\\images\\team_img2.jpg'); /* Replace with your image path */
+  background-image: url('./images/team_img2.jpg'); /* Replace with your image path */
   background-size: contain; /* Ensures the entire image fits perfectly */
   background-position: center;
   background-repeat: no-repeat;
@@ -171,7 +171,7 @@ html, body {
   width: 150px; /* Set appropriate width */
   height: auto; /* Maintain aspect ratio */
   z-index: 100; /* Ensure it appears above other elements */
-  background-image: url('C:\\Users\\DELL\\hc_new\\Humble-Coders-new\\src\\assets\\Pages\\images\\hc_logo.png'); /* Correct path */
+  background-image: url('./images/hc_logo.png'); /* Correct path */
   background-size: contain; /* Fit the image within the specified dimensions */
   background-repeat: no-repeat; /* Prevent repetition */
   background-position: center; /* Center the image */

@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import { FaPhone, FaEnvelope } from "react-icons/fa";
-import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import logo from '../../assets/Pages/images/hc_logo.png';
+import { FaPhone, FaEnvelope, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+
 
 import "./Contact.css";
 

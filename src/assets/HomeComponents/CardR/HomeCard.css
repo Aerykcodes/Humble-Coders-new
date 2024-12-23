@@ -9,10 +9,12 @@
     height: 300px;
     overflow: hidden;
     transition: max-width 0.3s ease;
+    opacity: 0.9;
   }
   
   .home-card:hover {
-    max-width: 600px; /* Expand to 600px on hover */
+    max-width: 800px; /* Expand to 600px on hover */
+    opacity: 1;
   }
   
   .home-card-content {
@@ -30,7 +32,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; /* Center the title */
-    background: url('your-image-url.jpg') center center/cover no-repeat;
+    background: url('../HomeImages/HumbleCodersBG.jpg') center center/cover no-repeat;
+  
   }
   
   .home-card-hidden {
@@ -38,7 +41,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px;
     opacity: 0;
     background-color: #f0f0f0; /* Background color for the extended part */

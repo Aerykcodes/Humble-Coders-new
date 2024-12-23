@@ -1,0 +1,32 @@
+/* Center the button using flexbox */
+.Button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .register-btn {
+    background:rgb(195, 198, 26);
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    width: 200px;
+    height: 70px;
+  }
+  
+  .register-btn:hover {
+    background: gray;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+  
+  .register-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  

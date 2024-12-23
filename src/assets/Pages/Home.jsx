@@ -1,20 +1,19 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar"; // Import Navbar
+import HomeFirst from "../HomeComponents/HomeFirst";
 import Achievements from "../HomeComponents/Achievements";
-import HomeCard from "../HomeComponents/CardR/HomeCard";
-import NewCard from "../HomeComponents/Card2/NewCard";
-import ThirdCard from "../HomeComponents/Card3/ThirdCard";
+import './Home.css'
+import WorkshopSection from "../HomeComponents/WorkshopSection";
 
 export default function Home() {
   return (
-    <div className="main-container">
+    <div className="main-container-Home">
       <Navbar /> {/* Navbar will be shown here */}
       <div className="main-content">
         <br /><br /><br /><br /><br /><br />
+       <HomeFirst/>
        <Achievements/>
-       <HomeCard/>
-       <NewCard/>
-       <ThirdCard/>
+       <WorkshopSection/>
       </div>
     </div>
   );

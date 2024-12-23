@@ -1,0 +1,37 @@
+.component-container {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .image {
+    width: 400px;
+    height: 200px;
+    object-fit:fill; /* Ensures the image fits well inside the box */
+  }
+  
+  .content-section {
+    background-color: rgb(127, 127, 127);
+    border-radius: 25px;
+    opacity: 0.9;
+    padding: 30px; /* Add padding for better spacing */
+    margin-top: 20px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    max-width: 400px; /* Optional: Limit the width if needed */
+    word-wrap: break-word; /* Ensures text doesn't overflow */
+}
+
+  
+  .separator {
+    border: 5px;
+    height: 5px;
+    background: #000000;
+    align-self: center;
+    margin: 20px -200px;
+    border-radius: 5px;
+    width: 200%;
+  }
+  
+  
+  

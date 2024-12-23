@@ -1,0 +1,19 @@
+/* Container for the photo and text */
+.content-section {
+  text-align: left; /* Align text to the left */
+  padding: 10px;
+}
+
+/* Image styling */
+.content-img {
+  width: 100%; /* Makes the image responsive */
+  max-width: 400px; /* Set max width to 400px */
+  height: auto;
+}
+
+/* Styling for the text */
+.content-text {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
