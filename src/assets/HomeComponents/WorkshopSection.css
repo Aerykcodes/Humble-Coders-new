@@ -2,12 +2,13 @@
 /* Container for the workshop section with padding, semi-transparent background, and increased size */
 .workshop-section-container {
     padding: 60px 20px; /* Increased padding for a bigger section */
-    background-color: rgba(240, 240, 240); /* Transparent background */
+    background-color: rgba(0,0,0,0.8); /* Transparent background */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin-top: -880px; /* Reduce or adjust this to move the section upwards without the negative space */
+    margin-top: 200px; /* Reduce or adjust this to move the section upwards without the negative space */
     margin-bottom: 50px;
     min-height: 500px; /* Increased height for the section */
+    border: 2px solid yellow;
   }
   
   
@@ -34,7 +35,7 @@
     width: 100%;
     padding: 0;
     background-color: #ffffff;
-    border: 2px solid #ccc;
+    border: 2px solid yellow;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -80,13 +81,13 @@
   .workshop-section-text h2 {
     margin-bottom: 20px;
     font-size: 24px;
-    color: #333;
+    color: #ffffff;
   }
   
   /* Paragraph styles */
   .workshop-section-text p {
     font-size: 16px;
-    color: #666;
+    color: #ffffff;
   }
   
   /* Responsive styles for small screens */
