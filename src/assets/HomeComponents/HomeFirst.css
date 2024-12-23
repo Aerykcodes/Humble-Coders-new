@@ -10,8 +10,9 @@
     object-fit:fill; /* Ensures the image fits well inside the box */
   }
   
-  .content-section {
-    background-color: rgb(127, 127, 127);
+  .Home-content-section {
+    background-color: rgb(0, 0, 0,0.8);
+    border: 2px solid yellow;
     border-radius: 25px;
     opacity: 0.9;
     padding: 30px; /* Add padding for better spacing */

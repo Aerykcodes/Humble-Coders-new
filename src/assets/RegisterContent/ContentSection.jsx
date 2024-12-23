@@ -3,7 +3,7 @@ import './ContentSection.css';
 
 const ContentSection = () => {
   return (
-    <div className="container">
+    <div className="reg-container">
       <div className="row justify-content-start">
         <div className="col-12 col-md-4">
           <div className="content-section">

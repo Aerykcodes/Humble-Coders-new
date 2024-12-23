@@ -1,106 +1,112 @@
 /* Container for the workshop section with padding, semi-transparent background, and increased size */
-/* Container for the workshop section with padding, semi-transparent background, and increased size */
 .workshop-section-container {
-    padding: 60px 20px; /* Increased padding for a bigger section */
-    background-color: rgba(0,0,0,0.8); /* Transparent background */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 200px; /* Reduce or adjust this to move the section upwards without the negative space */
-    margin-bottom: 50px;
-    min-height: 500px; /* Increased height for the section */
-    border: 2px solid yellow;
+  padding: 60px 20px; /* Increased padding for a bigger section */
+  background-color: rgba(0, 0, 0, 0.8); /* Transparent background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 200px; /* Adjust this to reduce negative space */
+  margin-bottom: 50px;
+  min-height: 500px; /* Increased height for the section */
+  border: 2px solid yellow;
+  height: 750px;
+  align-content: center;
+}
+
+/* Flexbox container for the content, aligned in the center */
+.workshop-section-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Photos container with relative positioning and flex alignment */
+.workshop-section-photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: auto; /* Allows height to adapt to the content */
+}
+
+/* Rectangular design for the carousel with consistent height and smooth transition */
+.rectangular-design {
+  width: 80%; /* Adjust the width as needed */
+  max-height: 600px; /* Set the desired height */
+  margin: 0 auto; /* Center the carousel */
+  background-color: #ffffff;
+  border: 2px solid yellow;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Photo styles with consistent aspect ratio */
+.workshop-section-photo {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures images cover the container area */
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Faster transition for smoother animation */
+}
+
+/* Placeholder for images before they are loaded */
+.workshop-section-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  border-radius: 8px;
+  animation: loadingAnimation 1.5s infinite ease-in-out;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    background-color: #ddd;
   }
-  
-  
-  /* Flexbox container for the content, aligned in the center */
-  .workshop-section-content {
-    display: flex;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+  50% {
+    background-color: #bbb;
   }
-  
-  /* Photos container with relative positioning and flex alignment */
+  100% {
+    background-color: #ddd;
+  }
+}
+
+/* Text container with padding and right-aligned text */
+.workshop-section-text {
+  padding-left: 40px;
+  text-align: right;
+}
+
+/* Heading styles */
+.workshop-section-text h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+/* Paragraph styles */
+.workshop-section-text p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
   .workshop-section-photos {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 400px; /* Fixed height for the carousel */
   }
-  
-  /* Rectangular design for the carousel with consistent height and smooth transition */
+
   .rectangular-design {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    background-color: #ffffff;
-    border: 2px solid yellow;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    max-height: 250px; /* Reduced height for small screens */
   }
-  
-  /* Photo styles with smooth transitions and fixed size */
+
   .workshop-section-photo {
-    width: 100%;
-    height: 100%; /* Ensures images fill the carousel container */
-    object-fit: cover; /* Ensures images cover the area without stretching */
-    border-radius: 8px;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    object-fit: contain; /* Prevent clipping on small screens */
   }
-  
-  /* Placeholder for images before they are loaded */
-  .workshop-section-photo-placeholder {
-    width: 100%;
-    height: 100%;
-    background-color: #ccc;
-    border-radius: 8px;
-    animation: loadingAnimation 1.5s infinite ease-in-out;
-  }
-  
-  @keyframes loadingAnimation {
-    0% {
-      background-color: #ddd;
-    }
-    50% {
-      background-color: #bbb;
-    }
-    100% {
-      background-color: #ddd;
-    }
-  }
-  
-  /* Text container with padding and right-aligned text */
+
   .workshop-section-text {
-    padding-left: 40px;
-    text-align: right;
+    padding-left: 0;
+    text-align: center;
+    margin-top: 20px;
   }
-  
-  /* Heading styles */
-  .workshop-section-text h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #ffffff;
-  }
-  
-  /* Paragraph styles */
-  .workshop-section-text p {
-    font-size: 16px;
-    color: #ffffff;
-  }
-  
-  /* Responsive styles for small screens */
-  @media (max-width: 768px) {
-    .workshop-section-photos {
-      justify-content: center;
-      height: 300px; /* Reduced height for small screens */
-    }
-  
-    .workshop-section-text {
-      padding-left: 0;
-      text-align: center;
-      margin-top: 20px;
-    }
-  }
-  
+}
