@@ -11,7 +11,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     padding: 12px 24px;
-    border: none;
+    border: 5px solid rgb(0, 0, 0);
     border-radius: 30px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
@@ -20,7 +20,9 @@
   }
   
   .register-btn:hover {
-    background: gray;
+    background: rgb(0, 0, 0);
+    color: yellow;
+    border: 3px solid yellow;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-3px);
   }

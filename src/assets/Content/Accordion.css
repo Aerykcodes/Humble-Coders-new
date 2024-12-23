@@ -1,53 +1,82 @@
+/* Accordion container */
 .accordion {
-  margin: 4px 0; /* Reduce margin */
+  margin: 10px 0;
   border: 3px solid #000000;
-  border-radius: 8px; /* Slightly smaller border radius */
+  border-radius: 8px;
   background-color: #b0b0b0;
   color: #000000;
-  overflow: hidden; /* Hide content when closed */
-  max-width: 90%; /* Adjust size to make it smaller */
-  margin: 10px auto; /* Center it with some space */
-  opacity: 0.9; /* Reduced overall opacity */
+  overflow: hidden;
+  max-width: 90%;
+  margin: 10px auto;
+  opacity: 0.9;
+  transition: all 0.3s ease;
 }
 
+/* Accordion header styles */
 .accordion-header {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  font-size: 13px; /* Slightly smaller font size */
-  padding: 6px 14px; /* Reduce padding */
-  background-color: #9a9a9a;
+  font-size: 16px; /* Increased font size */
+  font-weight: bold;
+  padding: 10px 15px;
+  background-color: #c6b838;
   color: rgb(0, 0, 0);
-  border-radius: 8px; /* Match border radius */
-  position: relative;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
 .accordion-header:hover {
-  background-color: #d5d5d5;
-  transform: scale(1.01);
+  background-color: #000000;
+  color: #c6b838;
 }
 
+/* Accordion content, hidden by default */
 .accordion-content {
-  padding: 0 16px; /* Adjusted padding for better spacing */
-  background-color: #00000000; /* Softer background color */
-  border-top: 1px solid #006eff00;
-  font-size: 13px; /* Slightly increased font size */
-  color: #000000;
+  max-height: 0; /* Hide the content initially */
+  padding: 0 15px;
+  background: #f3f3f3;
+  color: #333;
+  font-size: 16px; /* Increased font size */
+  line-height: 1.8;
   opacity: 0;
-  max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  border-radius: 5px; /* Rounded corners */
+  transition: all 0.3s ease;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.accordion-content-visible {
-  opacity: 0.3; /* Reduced opacity */
-  max-height: 500px; /* Adjust based on your content */
-}
-
+/* When open, show the content */
 .accordion-content.open {
-  opacity: 0.5; /* Reduced opacity when fully open */
-  max-height: 800px; /* Adjust as needed for the content */
+  max-height: 700px; /* Set a max height when open */
+  opacity: 1;
+  padding: 15px; /* Add padding when content is revealed */
+}
+
+/* When closed, keep it hidden */
+.accordion-content.closed {
+  max-height: 0;
+  opacity: 0;
+}
+
+
+/* Add animation to the icons */
+@keyframes icon-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.animated-icon {
+  display: inline-block;
+  animation: icon-bounce 2s infinite;
+  font-size: 30px; /* Increased icon size */
+  color: #000000; /* Change color of icons */
 }

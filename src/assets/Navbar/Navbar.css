@@ -4,7 +4,7 @@
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
-  background-color: rgba(67, 67, 67, 0.75); /* Black background with opacity */
+  background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
   width: 80%; /* Initial width is 80% */
   max-width: 1200px; /* Ensures navbar doesn’t get too wide */
   border-radius: 50px;
@@ -36,19 +36,25 @@
   padding: 5px 12px; /* Base padding */
   font-size: 18px; /* Increased font size */
   transition: all 0.3s ease;
-  color: aliceblue;
+  color: grey;
 }
 
 /* Highlight the active tab with glowing effect */
 .nav-link.active {
   font-weight: bold;
-  color: #494a4a !important;
-  text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgba(255, 255, 255, 0.6);
+  color: rgb(255, 255, 255) !important;
+  text-shadow: yellow
+}
+
+.nav-link.active:hover {
+  font-weight: bold;
+  color: rgb(0, 0, 0) !important;
+
 }
 
 /* Hover effect: expanding the box and centering the text */
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  background-color: rgba(64, 63, 63, 0.8);
+  background-color: yellow;
   border-radius: 20px;
   width: auto; /* Remove fixed width */
   padding: 5px 20px; /* Increase padding for a wider box */
@@ -58,8 +64,10 @@
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  background-color: rgba(64, 63, 63, 0.8);
+  font-weight: bold;
+  background-color: yellow;
   border-radius: 20px;
+  color: black;
 }
 
 body {

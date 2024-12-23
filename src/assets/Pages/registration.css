@@ -1,3 +1,4 @@
+/* Main container styles with background image and overlay */
 .main-container-Register {
   position: relative;
   min-height: 100vh; /* Cover the entire viewport */
@@ -22,9 +23,15 @@
   pointer-events: none; /* Allow clicks through the overlay */
 }
 
+/* Content styling */
 .content {
   position: relative;
   z-index: 2;
   height: 100vh;
   overflow-y: auto; /* Enable vertical scrolling */
 }
+
+.accordion-content strong {
+  color: #000000; /* Change color of subheadings */
+}
+

@@ -16,7 +16,9 @@ const Accordion = ({ title, content }) => {
         <h3>{title}</h3>
         <span>{isOpen ? "-" : <FontAwesomeIcon icon={faArrowDown} />}</span>
       </div>
-      <div className={`accordion-content ${isOpen ? "open" : ""}`}>
+      <div
+        className={`accordion-content ${isOpen ? "open" : "closed"}`}
+      >
         {content}
       </div>
     </div>
