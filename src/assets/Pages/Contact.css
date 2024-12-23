@@ -11,32 +11,43 @@ html, body {
   height: 100%;
   width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  background-image: url('C:\\Users\\DELL\\hc_new\\Humble-Coders-new\\src\\assets\\Pages\\images\\background_img.jpg');/* Background color to avoid any white space around */
+  background-image: url('C:\\Users\\DELL\\hc_new\\Humble-Coders-new\\src\\assets\\Pages\\images\\background_img.jpg'); /* Background color to avoid any white space around */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.main-container{
-  
+@font-face {
+  font-family: 'CustomOutlineFont';
+  src: url('./fonts/YourOutlineFont.ttf') format('truetype');
+}
+.heading {
+  font-family: Bebas Neue,; /* Use the hollow font */
+  font-size: 3rem; /* Adjust size as needed */
+  color: #ffffff; /* White color */
+  text-transform: uppercase; /* Uppercase letters */
+  text-align: center; /* Center alignment */
+  margin-bottom: 15px;
 }
 .contact-page {
-   /* Replace with your image URL */
+  margin-top: 80px; /* Adjust this value based on your header height */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
   font-family: Arial, sans-serif;
-  min-height: 100vh; /* Full-screen height */
+  min-height: calc(100vh - 80px); /* Ensure full viewport height minus header height */
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 20px; /* Additional spacing inside the contact page */
 }
 
 /* Container for Two Columns */
 .contact-container {
+  margin-top: 0; /* Removed margin-top to eliminate space above */
   display: flex;
   width: 70%; /* Adjusted overall width for a balanced layout */
-  height: 500px; /* Adjusted height */
+  height: 600px; /* Adjusted height */
   background-color: rgba(0, 0, 0, 0.8); /* Black background with slight transparency */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -47,7 +58,7 @@ html, body {
 
 /* Left Section: Team Image */
 .contact-image-box {
-  background-image: url('C:\Users\DELL\hc_new\Humble-Coders-new\src\assets\Pages\images\team_img2.jpg'); /* Replace with your image path */
+  background-image: url('C:\\Users\\DELL\\hc_new\\Humble-Coders-new\\src\\assets\\Pages\\images\\team_img2.jpg'); /* Replace with your image path */
   background-size: contain; /* Ensures the entire image fits perfectly */
   background-position: center;
   background-repeat: no-repeat;
@@ -58,15 +69,20 @@ html, body {
 
 /* Right Section: Contact Details */
 .contact-details-box {
+  margin-top:40px;
   flex: 6; /* Width for the contact details */
   padding: 0px;
   background-color: rgba(0, 0, 0, 0.01); /* Black background with slight transparency */
   flex-direction: column;
   justify-content: center;
   color: #fff;
+  margin-top: 0; /* Removed margin-top for immediate contact info */
 }
-
+.heading{
+  margin-bottom: 50px;
+}
 .contact-details-box h2 {
+  margin-top:20px;
   text-align: center;
   font-size: 2rem; /* Reduced font size for a cleaner look */
   margin-bottom: 10px;
@@ -85,15 +101,16 @@ html, body {
 .contact-info {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-top: 0; /* Removed margin-top for a closer placement to the previous element */
   font-size: 1rem; /* Font size for a cleaner look */
-  line-height: 1.8;
+  line-height: 1.5;
 }
 
 .contact-info li {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; /* Spacing between items */
+  margin-bottom: 0px; /* Spacing between items */
+  margin-left: 30px;
 }
 
 .contact-info li i {
@@ -109,30 +126,79 @@ html, body {
   width: 100%;
 }
 
+
 /* Social Media Icons */
 .contact-social-media {
   display: flex;
-  background-image: 'C:\Users\DELL\hc_new\Humble-Coders-new\src\assets\Pages\images\instagram.png';
-  justify-content: center;
-  margin-top: 15px; /* Spacing above social media icons */
+  justify-content: flex-start; /* Align icons to the left beneath the email */
+  margin-top: 20px; /* Add spacing from the email section */
+  gap: 15px; /* Spacing between icons */
+  margin-left: 30px; /* Align with the left content */
 }
 
 .contact-social-media a {
-  color: #ffc107;
-  font-size: 1.8rem; /* Size for social media icons */
-  margin: 0 15px;
-  transition: color 0.3s;
+  font-size: 1.8rem; /* Icon size */
+  transition: transform 0.3s;
+}
+
+/* Add specific colors to each icon */
+.contact-social-media a:nth-child(1) {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.contact-social-media a:nth-child(2) {
+  color: #e4405f; /* Instagram Pink */
+}
+
+.contact-social-media a:nth-child(3) {
+  color: #25d366; /* WhatsApp Green */
 }
 
 .contact-social-media a:hover {
-  color: #fff; /* Highlight effect on hover */
+  transform: scale(1.2); /* Slightly enlarge icon on hover */
 }
+
+/* Add a consistent size for SVG icons */
+.contact-social-media svg {
+  width: 24px;
+  height: 24px;
+}
+
 .bottom-right-image {
-  background-image: url('C:\Users\DELL\hc_new\Humble-Coders-new\src\assets\Pages\images\hc_logo.png');
-  position: absolute;
-  bottom: 10px; /* Distance from the bottom */
-  right: 10px; /* Distance from the right */
-  width: 150px; /* Adjust the size of the image */
-  height: auto;
-  object-fit: contain; /* Maintain aspect ratio */
+  position: fixed; /* Ensure it stays at the bottom-right of the screen */
+  bottom: 10px; /* Adjust distance from the bottom */
+  right: 10px; /* Adjust distance from the right */
+  width: 150px; /* Set appropriate width */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 100; /* Ensure it appears above other elements */
+  background-image: url('C:\\Users\\DELL\\hc_new\\Humble-Coders-new\\src\\assets\\Pages\\images\\hc_logo.png'); /* Correct path */
+  background-size: contain; /* Fit the image within the specified dimensions */
+  background-repeat: no-repeat; /* Prevent repetition */
+  background-position: center; /* Center the image */
 }
+
+/* Footer styles */
+.footer {
+  background-color: rgba(0, 0, 0, 0.8); /* Same as header background */
+  color: #ffc107; /* Golden text color */
+  text-align: center;
+  padding: 15px 0;
+  font-family: Arial, sans-serif; /* Match header font */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow similar to the header */
+  position: relative; /* Static positioning */
+  bottom: 0;
+  width: 100%; /* Full width of the page */
+}
+
+.footer-content {
+  max-width: 1200px; /* Restrict content width for better alignment */
+  margin: 0 auto; /* Center content horizontally */
+}
+
+.footer-text {
+  font-size: 1.2rem; /* Slightly larger text for emphasis */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Subtle text shadow for depth */
+  letter-spacing: 0.5px; /* Enhance readability */
+}
+
+
