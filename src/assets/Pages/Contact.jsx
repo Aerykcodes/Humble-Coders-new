@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-// import Footer from "../Footer/Footer";
-import logo from '../../assets/Pages/images/hc_logo.png';
-import aaryan from '../../assets/Pages/images/aaryan2.jpg';
-import ishank from '../../assets/Pages/images/ishank.2.jpg'
-import ritvik from '../../assets/Pages/images/ritvik.jpg';
-import sharanya from '../../assets/Pages/images/sharanya.jpg';
-import shreya from '../../assets/Pages/images/shreya.jpg';
-import ansh from '../../assets/Pages/images/ansh.jpg';
+import Footer from '../Footer/Footer'
+import logo from '../Pages/images/images/hc_logo.png';
+import aaryan from '../Pages/images/images/aaryan2.jpg';
+import ishank from '../Pages/images/images/ishank.2.jpg'
+import ritvik from '../Pages/images/images/ritvik.jpg';
+import sharanya from '../Pages/images/images/sharanya.jpg';
+import shreya from '../Pages/images/images/shreya.jpg';
+import ansh from '../Pages/images/images/ansh.jpg';
 import { FaPhone, FaEnvelope, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import "./Contact.css";
 
