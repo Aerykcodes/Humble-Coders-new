@@ -1,0 +1,27 @@
+/* Container for the main registration section */
+.reg-container {
+  width: 100%; /* Ensure it takes the full width */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+/* Container for the photo and text with a unique class name */
+.unique-content-section {
+  text-align: left; /* Align text to the left */
+  padding: 10px;
+  color: #ffffff; /* Ensure text is white */
+}
+
+/* Image styling with a unique class name */
+.unique-content-img {
+  width: 100%; /* Makes the image responsive */
+  max-width: 400px; /* Set max width to 400px */
+  height: auto;
+}
+
+/* Styling for the text with a unique class name */
+.unique-content-text-sec {
+  margin-top: 10px;
+  font-size: 16px;
+}

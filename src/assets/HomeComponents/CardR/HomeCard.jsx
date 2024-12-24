@@ -30,11 +30,10 @@ const HomeCard = () => {
         <div className="col-lg-4 col-md-6 mb-4 mx-auto">
           <div className="home-card card card-3"> {/* Add card-3 class */}
             <div className="home-card__content card-body">
-              <p className="home-card__title card-title">Card Title 3</p>
-              <p className="home-card__description card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco.
+              <p className="home-card__title card-title">Classified Project with the Indian Army</p>
+              <p className="home-card__description card-text"><br />
+Humble Coders is proud to have worked for the Indian Army on a classified project.
+<br /><br /> While details remain confidential, this collaboration showcases our ability to deliver innovative and reliable solutions for critical and sensitive requirements, reinforcing our commitment to excellence.
               </p>
             </div>
           </div>

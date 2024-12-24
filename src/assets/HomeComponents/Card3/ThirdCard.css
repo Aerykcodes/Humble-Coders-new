@@ -1,0 +1,122 @@
+.third-card-wrapper {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full height to center the card vertically */
+}
+
+.third-card {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  overflow: hidden;
+  transition: max-width 0.3s ease;
+  opacity: 0.9;
+}
+
+.third-card:hover {
+  max-width: 800px; /* Expand to 800px on hover */
+  opacity: 1;
+}
+
+.third-card-content {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+}
+
+.third-card-visible {
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the title */
+  background: url('../HomeImages/LibraryUI.jpg') center center/cover no-repeat;
+  background-size: cover; /* Ensure the image covers the container */
+  width: 100%; /* Ensure the image takes the full width */
+  height: 100%; /* Ensure the image takes the full height */
+  object-fit: cover; /* Ensure the image maintains its aspect ratio */
+}
+
+.third-card-hidden {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  opacity: 0;
+  background-color: #000000; /* Background color for the extended part */
+  transition: opacity 0.3s ease;
+  color: white;
+  border-radius: 50px;
+}
+
+.third-card:hover .third-card-hidden {
+  opacity: 1;
+  border-radius: 30px;
+  border: 2px solid yellow;
+}
+
+.third-card-title {
+  margin: 10px 0;
+  color: white; /* Ensure the title is visible on the background image */
+}
+
+.third-card-description {
+  margin: 0;
+  text-align: center; /* Center the description text */
+  color: white;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .third-card-wrapper {
+    height: auto; /* Adjust height for small screens */
+    padding: 20px; /* Add padding */
+    transform: translate(0, -890px); /* Maintain your set position */
+  }
+
+  .third-card {
+    max-width: 100%; /* Allow the card to take full width on small screens */
+    height: auto; /* Adjust height for small screens */
+  }
+
+  .third-card-content {
+    flex-direction: column; /* Change direction to column for better stacking */
+  }
+
+  .third-card-visible {
+    flex: none; /* Disable flex grow/shrink */
+    width: 100%; /* Take full width */
+    height: 200px; /* Set height for small screens */
+    object-fit: cover; /* Ensure the image maintains its aspect ratio */
+  }
+
+  .third-card-hidden {
+    flex: none; /* Disable flex grow/shrink */
+    width: 100%; /* Take full width */
+    padding: 10px; /* Reduce padding for small screens */
+    text-align: left; /* Align text to the left */
+  }
+}
+
+/* Media query for large screens */
+@media (min-width: 769px) {
+  .third-card-wrapper {
+    justify-content: flex-start; /* Position the card to the left */
+    align-items: flex-start;
+    height: 100vh; /* Full height for large screens */
+    transform: translate(-170px, -850px); /* Maintain your set position */
+  }
+}
+
+/* Option for slight position change */
+.slight-position-change {
+  transform: translate(-10px, -10px); /* Slight position change option */
+}

@@ -1,0 +1,44 @@
+/* Accordion.css */
+
+.accordion {
+  margin: 4px 0; /* Reduce margin */
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Slightly smaller border radius */
+  background-color: #f9f9f9;
+  overflow: hidden; /* Hide content when closed */
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 14px; /* Smaller font size */
+  padding: 8px 16px; /* Reduce padding */
+  background-color: #333;
+  color: white;
+  border-radius: 8px; /* Match border radius */
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.accordion-header:hover {
+  background-color: #575757;
+  transform: scale(1.01);
+}
+
+.accordion-content {
+  padding: 8px 16px; /* Smaller padding */
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  font-size: 14px; /* Reduce font size */
+  color: #333;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+}
+
+.accordion-content.open {
+  opacity: 1;
+  max-height: 800px; /* Adjust as needed for the content */
+}
