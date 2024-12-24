@@ -4,7 +4,7 @@
   min-height: 100vh; /* Cover the entire viewport */
   padding: 20px; /* Optional padding */
   overflow: hidden; /* Hide overflow */
-  background-image: url('./images/RegistrationBG.png'); /* Path to your image */
+  background-image: url('./images/RegistrationB.jpeg'); /* Path to your image */
   background-attachment: fixed; /* Fix the background */
   background-size: cover; /* Ensure the image covers the entire area */
   background-position: center; /* Center the image */
