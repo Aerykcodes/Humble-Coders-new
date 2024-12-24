@@ -1,13 +1,17 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./RegisterButton.css";
 
-const RegisterButton = ({ text, onClick }) => {
+const RegisterButton = () => {
   return (
     <div className="Button-container">
-      <button className="register-btn " onClick={onClick}>
+      <a 
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdCAQzqkVE7d52jLucXsZBzkVNx__dUB7FvhwYjFnIjer4beA/viewform?usp=sf_link" 
+        className="register-btn" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
         Register NOW
-      </button>
+      </a>
     </div>
   );
 };
