@@ -1,38 +1,70 @@
 .component-container {
-    width: 400px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .image {
-    width: 400px;
-    height: 200px;
-    object-fit:fill; /* Ensures the image fits well inside the box */
-  }
-  
-  .Home-content-section {
-    background-color: rgb(0, 0, 0,0.8);
-    border: 2px solid yellow;
-    border-radius: 25px;
-    opacity: 0.9;
-    padding: 30px; /* Add padding for better spacing */
-    margin-top: 20px;
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    max-width: 400px; /* Optional: Limit the width if needed */
-    word-wrap: break-word; /* Ensures text doesn't overflow */
+  width: 100%; /* Use full width of the container */
+  max-width: 1200px; /* Set maximum width */
+  margin: 0 auto;
+  text-align: center;
 }
 
-  
-  .separator {
-    border: 5px;
-    height: 5px;
-    background: #000000;
-    align-self: center;
-    margin: 20px -200px;
-    border-radius: 5px;
-    width: 200%;
+.image {
+  width: 100%; /* Make the image responsive */
+  max-width: 400px; /* Set maximum width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: fill; /* Ensures the image fits well inside the box */
+}
+
+@font-face {
+  font-family: 'Moontime';
+  src: url('../Font/FontsFree-Net-MoonTime-Regular-1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.TagLine {
+  font-family: 'Moontime', sans-serif;
+  font-size: 45px;
+  color: yellow;
+  ;
+}
+
+
+.Home-content-section {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid yellow;
+  border-radius: 25px;
+  opacity: 0.9;
+  padding: 30px; /* Add padding for better spacing */
+  margin-top: 20px;
+  font-size: 20px;
+  width: 100%; /* Use full width of the container */
+  max-width: 1200px; /* Set maximum width */
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 0 #000, /* top-left */ -1px -1px 0 #000, /* bottom-right */ -1px 1px 0 #000, /* top-right */ 1px -1px 0 #000; /* bottom-left */
+}
+
+.separator {
+  border: 5px solid transparent; /* Set border to transparent */
+  height: 5px;
+  background: #000000;
+  margin: 20px 0; /* Adjust margin for better spacing */
+  border-radius: 5px;
+  width: 100%; /* Use full width of the container */
+  max-width: 1200px; /* Set maximum width */
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+  .Home-content-section {
+    font-size: 16px; /* Reduce font size for small screens */
+    padding: 20px; /* Adjust padding for small screens */
   }
-  
-  
-  
+
+  .image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .separator {
+    width: 100%; /* Use full width of the container */
+    margin: 20px 0; /* Adjust margin for better spacing */
+  }
+}

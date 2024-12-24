@@ -3,14 +3,40 @@ import './HomeCard.css';
 
 const HomeCard = () => {
   return (
-    <div className="home-card-wrapper d-flex justify-content-center align-items-center">
-      <div className="home-card">
-        <div className="home-card-content">
-          <div className="home-card-visible">
-            <h2 className="home-card-title">Title</h2>
+    <div className="container-fluid mt-5">
+      <div className="row gx-5"> {/* Add gx-5 for horizontal spacing */}
+        <div className="col-lg-4 col-md-6 mb-4">
+          <div className="home-card card card-1"> {/* Add card-1 class */}
+            <div className="home-card__content card-body">
+              <p className="home-card__title card-title">Library Management App for NNCL </p>
+              <p className="home-card__description card-text">
+                Humble Coders is working on a Library Management App for NNCL, featuring a seat booking system, real-time availability tracking, and break scheduling to ensure efficient library use. The app includes ID card scanning for attendance, group room bookings, and luggage storage updates. <br /><br />
+                For library administrators, the Library Manager App tracks seat usage, peak hours, demographics, and user complaints, optimizing operations and ensuring a seamless experience for all users.
+              </p>
+            </div>
           </div>
-          <div className="home-card-hidden">
-            <p className="home-card-description">Description</p>
+        </div>
+        <div className="col-lg-4 col-md-6 mb-4">
+          <div className="home-card card card-2"> {/* Add card-2 class */}
+            <div className="home-card__content card-body">
+              <p className="home-card__title card-title">Business Management App for a Cylinder Business</p>
+              <p className="home-card__description card-text">
+                Humble Coders successfully developed and delivered a custom business management app tailored for a cylinder distribution business. This app streamlined operations, improved inventory tracking, and enhanced overall efficiency. <br /><br />
+                By addressing the client’s specific needs, we provided a scalable solution that transformed their workflow, showcasing our ability to create impactful tech solutions for businesses of all scales.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-4 col-md-6 mb-4 mx-auto">
+          <div className="home-card card card-3"> {/* Add card-3 class */}
+            <div className="home-card__content card-body">
+              <p className="home-card__title card-title">Card Title 3</p>
+              <p className="home-card__description card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco.
+              </p>
+            </div>
           </div>
         </div>
       </div>

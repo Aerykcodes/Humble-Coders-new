@@ -74,13 +74,13 @@
 /* Text container with padding and right-aligned text */
 .workshop-section-text {
   padding-left: 40px;
-  text-align: right;
+  text-align: center;
 }
 
 /* Heading styles */
-.workshop-section-text h2 {
+.workshop-section-text h1 {
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 50px;
   color: #ffffff;
 }
 
@@ -108,5 +108,14 @@
     padding-left: 0;
     text-align: center;
     margin-top: 20px;
+    font-size: 14px; /* Reduce font size for small screens */
+  }
+
+  .workshop-section-text h1 {
+    font-size: 36px; /* Reduce heading size for small screens */
+  }
+
+  .workshop-section-text p {
+    font-size: 14px; /* Reduce paragraph font size for small screens */
   }
 }

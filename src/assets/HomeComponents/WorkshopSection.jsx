@@ -5,12 +5,10 @@ import './WorkshopSection.css';
 import Picture1 from './HomeImages/Picture1.jpg';
 import Picture2 from './HomeImages/Picture2.jpg';
 import Picture3 from './HomeImages/Picture3.jpg';
-import Picture4 from './HomeImages/Picture4.jpg';
-import Picture5 from './HomeImages/Picture5.jpg';
+import Picture4 from './HomeImages/Picture4.jpg'
 import Picture6 from './HomeImages/Picture6.jpg';
-import Picture7 from './HomeImages/Picture7.jpg';
 
-const images = [Picture1, Picture2, Picture3,Picture4, Picture5, Picture6, Picture7];
+const images = [Picture1, Picture2, Picture3,Picture4, Picture6];
 
 const WorkshopSection = () => {
   return (
@@ -33,10 +31,12 @@ const WorkshopSection = () => {
 
         {/* Text Section */}
         <div className="col-md-6 workshop-section-text">
-          <h2>Workshop Heading</h2>
+          <h1>Previous Workshops</h1>
           <p>
-            This is a sample paragraph. You can add more details and information here.
-            The text will be aligned to the right side of the section.
+         <strong>Workshop at Thapar Institute of Engineering and Technology</strong><br />
+We at Humble Coders were thrilled to host a native Android app development workshop at Thapar Institute of Engineering and Technology, engaging 70 enthusiastic students from branches like COE, COPC, EEC, and Biotech.
+Starting with zero prior experience in app development, the students embarked on a hands-on journey, learning the essentials of Kotlin and Jetpack Compose. <br /> <br />By the end of the workshop, they had built and deployed their very own CGPA calculator app, proudly showcased on GitHub.
+The energy, curiosity, and growth displayed by the students were inspiring, reaffirming our mission to share tech skills and make an impact. This experience stands as another proud milestone in our journey to empower future developers!
           </p>
         </div>
       </div>

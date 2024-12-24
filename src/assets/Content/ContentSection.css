@@ -1,5 +1,4 @@
-/* Container for the photo and text */
-.content-section {
+.home-container-section {
   text-align: left; /* Align text to the left */
   padding: 10px;
 }
@@ -9,11 +8,47 @@
   width: 100%; /* Makes the image responsive */
   max-width: 400px; /* Set max width to 400px */
   height: auto;
+  margin: 0 auto; /* Center image on smaller screens */
 }
 
 /* Styling for the text */
 .content-text {
   margin-top: 10px;
   font-size: 16px;
-  color: #333;
+  color: #ffffff;
+  align-self: center;
+  margin-left: 10px;
+  margin-right: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border: 2px solid yellow;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+@media (max-width: 576px) {
+  .content-text {
+    font-size: 14px;
+    padding: 8px;
+    margin: 5px;
+  }
+  
+  .content-img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@font-face {
+  font-family: 'Moontime';
+  src: url('../Font/FontsFree-Net-MoonTime-Regular-1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Tag-Line {
+  font-family: 'Moontime', sans-serif;
+  font-size: 35px;
+  color: yellow;
+  ;
 }
