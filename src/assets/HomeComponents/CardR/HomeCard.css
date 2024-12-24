@@ -19,15 +19,15 @@
 }
 
 .card-2 {
-  background-image: url('../HomeImages/CylinderUI.jpg');
+  background-image: url('../HomeImages/Classified.png');
   background-size: cover;
   background-position:top;
 }
 
 .card-3 {
-  background-image: url('URL_OF_THIRD_IMAGE');
+  background-image: url('../HomeImages/CylinderUI.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 .home-card:hover {

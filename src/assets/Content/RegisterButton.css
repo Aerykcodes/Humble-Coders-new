@@ -6,7 +6,7 @@
 }
   
   .register-btn {
-    background:rgb(195, 198, 26);
+    background: #4263ac;
     color: rgb(0, 0, 0);
     font-size: 1.2rem;
     font-weight: bold;
@@ -21,8 +21,8 @@
   
   .register-btn:hover {
     background: rgb(0, 0, 0);
-    color: yellow;
-    border: 3px solid yellow;
+    color: #4263ac;
+    border: 3px solid #4263ac;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-3px);
   }

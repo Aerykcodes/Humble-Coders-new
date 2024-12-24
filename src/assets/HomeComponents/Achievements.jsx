@@ -8,8 +8,6 @@ const Achievements = () => {
       <br /><br />
       <h2 className="achievements-heading">OUR ACHIEVEMENTS</h2>
       <HomeCard/>
-      {/* <NewCard/>
-      <ThirdCard/> */}
     </div>
   );
 }

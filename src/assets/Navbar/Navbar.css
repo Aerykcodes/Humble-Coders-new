@@ -1,6 +1,6 @@
 #navbar {
   position: fixed;
-  top: 10;
+  top: 10px; /* Move the navbar further down */
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
@@ -14,8 +14,9 @@
   transform: translateX(-50%); /* Centers the navbar */
 }
 
+
 /* Center content in the navbar */
-.navbar .container {
+.navbar .container-navbar-main {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -197,7 +197,7 @@ export default function Contact() {
         Avni
       </a> 
       and 
-      <a href="https://www.linkedin.com/in/nishesh-singla-ba0574284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="developer-link">
+      <a href="https://www.linkedin.com/in/nishesh-singla-ba0574284/" target="_blank" rel="noopener noreferrer" className="developer-link">
         Nishesh
       </a>
     </p>

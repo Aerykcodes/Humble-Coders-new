@@ -5,6 +5,7 @@ import ContentSection from "../Content/ContentSection";
 import Accordion from "../Content/Accordion";
 import RegisterButton from "../Content/RegisterButton";
 import 'bootstrap-icons/font/bootstrap-icons.css';  // Import Bootstrap icons
+import SiteFooter from "../SiteFooter/SiteFooter";
 
 export default function Registration() {
   return (
@@ -145,6 +146,7 @@ export default function Registration() {
 
 <RegisterButton />
 </div>
+<SiteFooter/>
     </>
   );
 }

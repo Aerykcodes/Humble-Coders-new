@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav id="navbar" className="navbar navbar-expand-lg">
-      <div className="container">
+      <div className="container-navbar-main">
         <ul className="navbar-nav ms-auto">
           <li className="nav-item">
             <Link

@@ -4,9 +4,11 @@ import HomeFirst from "../HomeComponents/HomeFirst";
 import Achievements from "../HomeComponents/Achievements";
 import './Home.css'
 import WorkshopSection from "../HomeComponents/WorkshopSection";
+import SiteFooter from "../SiteFooter/SiteFooter"
 
 export default function Home() {
   return (
+    <>
     <div className="main-container-Home">
       <Navbar /> {/* Navbar will be shown here */}
       <div className="main-content">
@@ -16,5 +18,7 @@ export default function Home() {
        <WorkshopSection/>
       </div>
     </div>
+    <SiteFooter/>
+    </>
   );
 }

@@ -20,7 +20,7 @@
   font-size: 16px; /* Increased font size */
   font-weight: bold;
   padding: 10px 15px;
-  background-color: #c6b838;
+  background-color: #fce05e;
   color: rgb(0, 0, 0);
   border-radius: 8px;
   transition: background-color 0.3s ease;
@@ -28,7 +28,7 @@
 
 .accordion-header:hover {
   background-color: #000000;
-  color: #c6b838;
+  color: #fce05e;
 }
 
 /* Accordion content, hidden by default */

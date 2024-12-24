@@ -19,10 +19,9 @@ const HomeCard = () => {
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="home-card card card-2"> {/* Add card-2 class */}
             <div className="home-card__content card-body">
-              <p className="home-card__title card-title">Business Management App for a Cylinder Business</p>
-              <p className="home-card__description card-text">
-                Humble Coders successfully developed and delivered a custom business management app tailored for a cylinder distribution business. This app streamlined operations, improved inventory tracking, and enhanced overall efficiency. <br /><br />
-                By addressing the client’s specific needs, we provided a scalable solution that transformed their workflow, showcasing our ability to create impactful tech solutions for businesses of all scales.
+              <p className="home-card__title card-title">Classified Project with the Indian Army </p>
+              <p className="home-card__description card-text">Humble Coders is proud to have worked for the Indian Army on a classified project. 
+<br /><br />While details remain confidential, this collaboration showcases our ability to deliver innovative and reliable solutions for critical and sensitive requirements, reinforcing our commitment to excellence.
               </p>
             </div>
           </div>
@@ -30,11 +29,10 @@ const HomeCard = () => {
         <div className="col-lg-4 col-md-6 mb-4 mx-auto">
           <div className="home-card card card-3"> {/* Add card-3 class */}
             <div className="home-card__content card-body">
-              <p className="home-card__title card-title">Classified Project with the Indian Army</p>
+              <p className="home-card__title card-title">Business Management App for a Cylinder Business</p>
               <p className="home-card__description card-text"><br />
-Humble Coders is proud to have worked for the Indian Army on a classified project.
-<br /><br /> While details remain confidential, this collaboration showcases our ability to deliver innovative and reliable solutions for critical and sensitive requirements, reinforcing our commitment to excellence.
-              </p>
+              Humble Coders successfully developed and delivered a custom business management app tailored for a cylinder distribution business. This app streamlined operations, improved inventory tracking, and enhanced overall efficiency. <br /> <br />
+By addressing the client’s specific needs, we provided a scalable solution that transformed their workflow, showcasing our ability to create impactful tech solutions for businesses of all scales.</p>
             </div>
           </div>
         </div>
