@@ -54,6 +54,6 @@
 /* Adjust heading size for small screens */
 @media (max-width: 576px) {
   .achievements-heading {
-    font-size: 18px; /* Smaller font size for small screens */
+    font-size: 15px; /* Smaller font size for small screens */
   }
 }
