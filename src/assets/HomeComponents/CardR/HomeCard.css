@@ -57,14 +57,14 @@
 
 .home-card__title {
   margin: 0;
-  font-size: 24px;
+  font-size: 18px;
   color: #ffffff;
   font-weight: 700;
 }
 
 .home-card__description {
   margin: 10px 0 0;
-  font-size: 16px;
+  font-size: 10px;
   color: #ffffff;
   line-height: 1.4;
   align-content: center;

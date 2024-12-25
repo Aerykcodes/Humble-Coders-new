@@ -10,7 +10,7 @@ const HomeCard = () => {
             <div className="home-card__content card-body">
               <p className="home-card__title card-title">Library Management App for NNCL </p>
               <p className="home-card__description card-text">
-                Humble Coders is working on a Library Management App for NNCL, featuring a seat booking system, real-time availability tracking, and break scheduling to ensure efficient library use. The app includes ID card scanning for attendance, group room bookings, and luggage storage updates. <br /><br />
+                Humble Coders is working on a Library Management App for NNCL, featuring a seat booking system, real-time availability tracking, and break scheduling to ensure efficient library use. The app includes ID card scanning for attendance, group room bookings, and luggage storage updates. <br />
                 For library administrators, the Library Manager App tracks seat usage, peak hours, demographics, and user complaints, optimizing operations and ensuring a seamless experience for all users.
               </p>
             </div>
@@ -30,8 +30,8 @@ const HomeCard = () => {
           <div className="home-card card card-3"> {/* Add card-3 class */}
             <div className="home-card__content card-body">
               <p className="home-card__title card-title">Business Management App for a Cylinder Business</p>
-              <p className="home-card__description card-text"><br />
-              Humble Coders successfully developed and delivered a custom business management app tailored for a cylinder distribution business. This app streamlined operations, improved inventory tracking, and enhanced overall efficiency. <br /> <br />
+              <p className="home-card__description card-text">
+              Humble Coders successfully developed and delivered a custom business management app tailored for a cylinder distribution business. This app streamlined operations, improved inventory tracking, and enhanced overall efficiency.
 By addressing the client’s specific needs, we provided a scalable solution that transformed their workflow, showcasing our ability to create impactful tech solutions for businesses of all scales.</p>
             </div>
           </div>
