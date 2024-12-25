@@ -1,5 +1,6 @@
 import React from 'react';
 import './ContentSection.css';
+import Humble_Coders from '../Content/Humble_Coders.png'
 
 const ContentSection = () => {
   return (
@@ -8,7 +9,7 @@ const ContentSection = () => {
         <div className="col-12 col-md-4">
           <div className="content-section">
             <img 
-              src="src\assets\Content\Humble_Coders.png" 
+              src={Humble_Coders} 
               alt="Photo" 
               className="img-fluid content-img"
             />

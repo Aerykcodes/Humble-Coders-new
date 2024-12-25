@@ -1,10 +1,11 @@
 import React from 'react';
 import './HomeFirst.css'; // Import the CSS file for styling
+import HumbleCodersImage from './HomeImages/Humble_Coders.png';
 
 const HomeFirst = () => {
   return (
     <div className="component-container">
-      <img src="src\assets\HomeComponents\HomeImages\Humble_Coders.png" alt="Placeholder Image" className="image" />
+      <img src={HumbleCodersImage} alt="Placeholder Image" className="image" />
       <p className="TagLine">A Safe Place For Your Humble Beginnings</p>
       <div className="Home-content-section">
         <p><strong>Welcome to Humble Coders</strong><br /><br />
