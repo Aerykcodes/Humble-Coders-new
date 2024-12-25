@@ -1,6 +1,7 @@
 .home-container-section {
   text-align: left; /* Align text to the left */
   padding: 10px;
+  position: relative; /* Add this for positioning */
 }
 
 /* Image styling */
@@ -17,8 +18,8 @@
   font-size: 16px;
   color: #ffffff;
   align-self: center;
-  margin-left: 10px;
-  margin-right: 20px;
+  margin-left: 55px;
+  margin-right: 55px;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
   border: 2px solid yellow;
@@ -50,5 +51,23 @@
   font-family: 'Moontime', sans-serif;
   font-size: 35px;
   color: yellow;
-  ;
+}
+
+/* New styles for the RegisterUp component */
+.register-up-container {
+  position: absolute;
+  right: 80px;
+  top: 80px;
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+  align-items: center; 
+  padding: 10px;
+}
+
+@media (max-width: 576px) {
+  .register-up-container {
+    position: static; /* Reset position for small screens */
+    justify-content: center; /* Center the button on smaller screens */
+    padding: 10px 0;
+  }
 }

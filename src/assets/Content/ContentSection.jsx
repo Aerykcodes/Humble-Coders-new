@@ -1,6 +1,7 @@
 import React from 'react';
 import './ContentSection.css';
-import Humble_Coders from '../Content/Humble_Coders.png'
+import Humble_Coders from '../Content/Humble_Coders.png';
+import RegisterUp from '../RegisterUp/RegisterUp'; // Import the RegisterUp component
 
 const ContentSection = () => {
   return (
@@ -13,7 +14,12 @@ const ContentSection = () => {
               alt="Photo" 
               className="img-fluid content-img"
             />
-           <p className="Tag-Line">A Safe Place For Your Humble Beginnings</p>
+            <p className="Tag-Line">A Safe Place For Your Humble Beginnings</p>
+          </div>
+        </div>
+        <div className="col-12 col-md-8 position-relative"> 
+          <div className="register-up-container">
+            <RegisterUp /> 
           </div>
         </div>
       </div>
