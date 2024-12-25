@@ -47,7 +47,7 @@
 /* Adjust card text for small screens */
 @media (max-width: 576px) {
   .card-text {
-    font-size: 12px; /* Smaller font size for small screens */
+    font-size: 13px; /* Smaller font size for small screens */
   }
 }
 
