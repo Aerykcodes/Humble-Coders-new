@@ -1,7 +1,7 @@
 import React from 'react';
 import './ContentSection.css';
 import Humble_Coders from '../Content/Humble_Coders.png';
-import RegisterUp from '../RegisterUp/RegisterUp'; // Import the RegisterUp component
+import RegisterUp from '../Content/RegisterUp'; // Import the RegisterUp component
 
 const ContentSection = () => {
   return (
