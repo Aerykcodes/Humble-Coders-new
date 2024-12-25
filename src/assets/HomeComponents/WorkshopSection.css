@@ -116,7 +116,7 @@
   }
 
   .workshop-section-text p {
-    font-size: 8px; /* Reduce paragraph font size for small screens */
-    padding: 0 10px;
+    font-size: 10px; /* Reduce paragraph font size for small screens */
+    padding: 0 8px;
   }
 }
