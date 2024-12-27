@@ -9,11 +9,10 @@
   max-width: 1200px; /* Ensures navbar doesn’t get too wide */
   border-radius: 50px;
   align-self: center;
-  font-size: 16px;
+  font-size: 14px;
   left: 50%; /* Centers the navbar */
   transform: translateX(-50%); /* Centers the navbar */
 }
-
 
 /* Center content in the navbar */
 .navbar .container-navbar-main {
@@ -44,13 +43,12 @@
 .nav-link.active {
   font-weight: bold;
   color: rgb(255, 255, 255) !important;
-  text-shadow: yellow
+  text-shadow: yellow;
 }
 
 .nav-link.active:hover {
   font-weight: bold;
   color: rgb(0, 0, 0) !important;
-
 }
 
 /* Hover effect: expanding the box and centering the text */
@@ -66,7 +64,7 @@
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
   font-weight: bold;
-  background-color: yellow;
+  background-color: aliceblue;
   border-radius: 20px;
   color: black;
 }
@@ -94,5 +92,12 @@ body {
   }
   #navbar {
     width: 95%; /* Makes navbar width even smaller on small screens */
+  }
+}
+
+/* Adjust font size for small screens */
+@media (max-width: 576px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 14px; /* Smaller font size for small screens */
   }
 }

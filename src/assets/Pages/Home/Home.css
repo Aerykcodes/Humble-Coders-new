@@ -1,0 +1,101 @@
+@font-face {
+   font-family: 'Copperplate Gothic Bold'; src: url('../../Font/copperplategothic_bold.ttf') format('truetype'); 
+  }
+
+.Home-background {
+  background-color: aliceblue;
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage-container {
+  margin-top: 20px;
+}
+
+.header-box-container {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-left: 5px solid darkblue;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  max-width: 100%; /* Allow it to be 100% width of its container */
+  width: 80%; /* Default width for larger screens */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.header-box {
+  text-align: center;
+}
+
+.homepage-title {
+  font-size: 2.5rem;
+}
+
+.homepage-description {
+  font-size: 1.2rem;
+}
+
+.home-box-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box-wrapper {
+  margin-top: 20px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-12 {
+  display: flex;
+  flex-direction: column;
+}
+
+.HomeBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.textbox-1 {
+  color: #4263a6;
+  font-family: 'Poppins', sans-serif; /* Applied Poppins font */
+}
+
+.textbox-2 {
+  color: #4e5f7a;
+  font-family: 'Roboto', sans-serif; /* Applied Roboto font */
+}
+
+.textbox-3 {
+  font-family: 'Roboto', sans-serif; /* Applied Roboto font */
+  color: purple;
+}
+
+.textbox-0{
+  font-family: 'Copperplate Gothic Bold' ;
+  color: #4e5f7a;
+}
+
+.register-link a {
+  color: #4263a6;
+  text-decoration: none; /* Optional: remove underline */
+  font-size: 20px;
+}
+
+.register-link a:hover {
+  color: #ff6347; /* Optional: change color on hover */
+}
+

@@ -1,0 +1,39 @@
+/* About.css */
+.Achievement-container{
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 100px; /* Adjust this value as needed */
+    background-color: #f9f9f9;
+  }
+
+
+
+  .Workshop-container{
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 50px; /* Adjust this value as needed */
+    background-color: #f9f9f9;
+
+  }
+
+
+  @media (max-width: 576px) {
+    .textArea {
+      padding: 5px; /* Reduce padding for small screens */
+      margin-top: 10px; /* Adjust margin */
+    }
+    
+    .title {
+      font-size: 1rem; /* Adjust font size */
+    }
+    
+    .image {
+      height: 200px; /* Adjust image height for small screens */
+    }
+  }
+  
+  

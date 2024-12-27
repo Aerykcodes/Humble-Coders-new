@@ -1,18 +1,22 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from "./assets/Pages/Home";
-import Contact from "./assets/Pages/Contact";
-import Registration from "./assets/Pages/Registration";
+import Content from "./assets/pages/Content/Content"; // Ensure correct path
+import Home from "./assets/pages/Home/Home";
+import About from "./assets/pages/About/About";
+import Registration from "./assets/pages/Registration/Registration";
+import Contact from "./assets/pages/Contact/Contact"
 
 function App() {
   return (
     <div id="app-root">
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<Home />} /> {/* Home Page */}
-          <Route path="/contact" element={<Contact />} /> {/* Contact Page */}
-          <Route path="/" element={<Registration />} /> {/* Registration Page */}
-          <Route path="/registration" element={<Registration />} /> {/* Registration Page */}
+          <Route path="/content" element={<Content />} /> {/* Content Page */}
+          <Route path="/" element={<Content />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/registration" element={<Registration />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </div>
