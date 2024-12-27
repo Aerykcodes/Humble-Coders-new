@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Content from "./assets/pages/Content/Content"; // Ensure correct path
-import Home from "./assets/pages/Home/Home";
-import About from "./assets/pages/About/About";
-import Registration from "./assets/pages/Registration/Registration";
-import Contact from "./assets/pages/Contact/Contact"
+import Home from "./assets/Pages/Home/Home";
+import About from "./assets/Pages/About/About";
+import Registration from "./assets/Pages/Registration/Registration";
+import Contact from "./assets/Pages/Contact/Contact"
 
 function App() {
   return (
