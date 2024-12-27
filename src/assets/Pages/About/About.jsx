@@ -1,6 +1,6 @@
 import React from 'react';
 import Achievements from './Achievements';
-import Navbar from '../../navbar/Navbar';
+import Navbar from '../../Navbar/Navbar';
 import WorkshopSection from './WorkshopSection';
 import './About.css';
 import SiteFooter from '../../SiteFooter/SiteFooter';

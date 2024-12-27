@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure you have Bootstrap included
-import Navbar from '../../navbar/Navbar';
+import Navbar from '../../Navbar/Navbar';
 import './Registration.css';
 import SiteFooter from '../../SiteFooter/SiteFooter';
 
