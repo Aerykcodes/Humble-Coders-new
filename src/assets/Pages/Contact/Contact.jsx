@@ -7,7 +7,7 @@ import aaryan from './aaryan2.jpg'
 import ritvik from './ritvik.jpg'
 import shreya from './shreya2.jpg'
 import sharanya from './sharanya.jpg'
-import Ishank from './Ishank.png'
+import Ishank from './ishank.png'
 import { FaPhone, FaEnvelope, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
