@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css'; // Import custom CSS (if needed)
-import Navbar from '../../navbar/Navbar'; // Import Navbar component
+import Navbar from '../../Navbar/Navbar'
 import HomeBox from './HomeBox'; // Import HomeBox component
 import SiteFooter from '../../SiteFooter/SiteFooter';
 
