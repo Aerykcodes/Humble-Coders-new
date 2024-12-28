@@ -11,7 +11,6 @@ function HomeBox({ heading, content }) {
       <style jsx>{`
         .homebox-container {
           padding: 20px;
-          border-left : 5px solid darkblue;
           margin-bottom: 20px;
           background-color: #f7fbfe;
           border-radius: 8px;

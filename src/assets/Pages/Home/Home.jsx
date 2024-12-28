@@ -30,7 +30,7 @@ function Home() {
         src={logo1}
         alt="Course banner"
         className="img-fluid"
-        style={{ maxWidth: '600px', height: 'auto', display: 'block', margin: '60px auto' }} // Adjust the size as needed
+        style={{ maxWidth: '600px', height: 'auto', display: 'block', margin: '80px auto' }} // Adjust the size as needed
       />
       <div className="homepage-container">
         <div className="header-box-container">
@@ -60,7 +60,7 @@ function Home() {
                       <li><strong>Certification: Receive a Certificate of Completion to enhance your career profile.</strong></li>
                     </ul>
                     <br />
-                    <p className="h5 text-center" style={{ color: '#4263a6' }}><strong >Projects included the course </strong><br /> <small>6 Major Projects</small></p> <br />
+                    <p className="h5 text-center" style={{ color: '#4263a6' }}><strong >Projects included in the course </strong><br /> <small>6 Major Projects</small></p> <br />
                     <ul className="projects-list">
                       <li style={{ color: '#4263a6', fontWeight: 'bold' }}>CGPA calculator</li>
                       <li style={{ color: '#4263a6', fontWeight: 'bold' }}>Wishlist app</li>

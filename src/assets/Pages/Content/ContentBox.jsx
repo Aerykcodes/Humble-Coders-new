@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ContentBox({ heading, content }) {
   const boxStyle = {
-    borderLeft: '5px solid darkblue',
     padding: '20px',
     marginBottom: '20px',
     backgroundColor: '#f9f9f9',

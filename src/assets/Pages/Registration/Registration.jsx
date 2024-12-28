@@ -31,9 +31,9 @@ const Registration = () => {
         <div className="three-step-container">
           <h3 className="text-center">Three Step Process</h3>
           <ul className="steps-list">
-            <li><strong>Step 1:</strong> Fill the Registration form.</li>
-            <li><strong>Step 2:</strong> Complete the Payment process.</li>
-            <li><strong>Step 3:</strong> Join the given WhatsApp group (link provided in the form).</li>
+            <li><strong>Step 1: <br /></strong> Fill the Registration form.</li>
+            <li><strong>Step 2: <br /></strong> Complete the Payment process.</li>
+            <li><strong>Step 3: <br /></strong> Join the given WhatsApp group (link provided in the form).</li>
           </ul>
         </div>
       </div>
