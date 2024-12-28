@@ -389,7 +389,13 @@ function Content() {
   <li><strong>Day 11:</strong> Firebase Integration</li>
   <li><strong>Day 12 & Day 13:</strong> Develop your Real-Time Chatting Application</li>
   <li><strong>Day 14 & Day 15:</strong> Notifications, Services, and Receivers</li>
-  <div className="top"> <button className="registration-button">Register Now</button></div>
+  <div className="top"><a 
+    href="https://docs.google.com/forms/d/e/1FAIpQLSdCAQzqkVE7d52jLucXsZBzkVNx__dUB7FvhwYjFnIjer4beA/viewform?usp=sf_link" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button class="registration-button">Register Now</button>
+  <button className="registration-button">Register Now</button> </a></div>
   
 </ul>
 
@@ -421,8 +427,12 @@ function Content() {
           </div>
         </div>
       </div>
-      <div className="bottom-registration">
-  <button className="registration-button-1">Register Now</button>
+      <div className="bottom-registration"><a 
+    href="https://docs.google.com/forms/d/e/1FAIpQLSdCAQzqkVE7d52jLucXsZBzkVNx__dUB7FvhwYjFnIjer4beA/viewform?usp=sf_link" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+  <button className="registration-button-1">Register Now</button> </a>
 </div>
       <SiteFooter />
     </>
