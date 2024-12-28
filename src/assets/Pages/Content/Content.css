@@ -3,19 +3,17 @@
   max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #f0f0f0;
-  border-radius: 8px;
+  background-color: #f7fbfe;
+  border-radius: 10px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   margin-top: 110px; /* Increase this value to move the box further down */
-  border-left: 5px solid darkblue;
 }
 
 
 .Box-Container {
   padding: 20px;
-  background-color: #ffffff;
-  border: 1px solid #000000;
+  background-color: #d7edf7;
   border-radius: 8px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
  

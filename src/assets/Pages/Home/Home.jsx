@@ -34,20 +34,35 @@ function Home() {
         <div className="box-wrapper container">
           <div className="row">
             <div className="col-12">
-              <HomeBox heading="Program Outcomes" content={
-                <ul> <strong>
-                  <li>Gain hands-on experience with Kotlin and Jetpack Compose for Android app development.</li>
-                  <li>Explore advanced concepts like Firebase integration, MVVM architecture, APIs, and real-time communication.</li>
-                  <li>Learn to design visually stunning and user-friendly app interfaces.</li>
-                  <li>
-                    Projects: Build professional apps from scratch, including a CGPA calculator, Wishlist app, Chatbot, Bluetooth scanner, and Chat application.
-                  </li>
-                  <li>
-                    Certification: Receive a Certificate of Completion to enhance your career profile.
-                  </li>
-                  </strong>
-                </ul>
-              } />
+            <HomeBox
+  heading="Program Outcomes"
+  content={
+    <div>
+      <ul>
+        <li><strong>Gain hands-on experience with Kotlin and Jetpack Compose for Android app development.</strong></li>
+        <li><strong>Explore advanced concepts like Firebase integration, MVVM architecture, APIs, and real-time communication.</strong></li>
+        <li><strong>Learn to design visually stunning and user-friendly app interfaces.</strong></li>
+        <li><strong>Certification: Receive a Certificate of Completion to enhance your career profile.</strong></li>
+      </ul>
+      <br />
+      <p className='h5' style={{ marginLeft: '20px' }}>
+  <strong style={{ color: '#4263a6' }}>Projects:</strong>
+</p>
+<ul style={{ marginLeft: '20px' }}>
+  <li><strong style={{ color: '#4263a6' }}>Build professional apps from scratch, including a CGPA calculator</strong></li>
+  <li><strong style={{ color: '#4263a6' }}>Wishlist app</strong></li>
+  <li><strong style={{ color: '#4263a6' }}>Chatbot</strong></li>
+  <li><strong style={{ color: '#4263a6' }}>Bluetooth scanner</strong></li>
+  <li><strong style={{ color: '#4263a6' }}>Chat application</strong></li>
+</ul>
+
+
+
+
+    </div>
+  }
+/>
+
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@
   }
 
 .Home-background {
-  background-color: aliceblue;
+  background-color: #d7edf7;
   min-height: 100vh; /* Ensure it covers the full viewport height */
   display: flex;
   flex-direction: column;
@@ -96,6 +96,6 @@
 }
 
 .register-link a:hover {
-  color: #ff6347; /* Optional: change color on hover */
+  color: #304673; /* Optional: change color on hover */
 }
 

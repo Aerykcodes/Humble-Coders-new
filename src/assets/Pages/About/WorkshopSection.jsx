@@ -30,7 +30,7 @@ const WorkshopSection = () => {
   const styles = {
     textArea: {
       width: '100%',
-      marginTop: '20px',
+      marginTop: '30px',
       padding: '10px',
       border: '2px solid black',
       borderRadius: '8px',
@@ -50,8 +50,8 @@ const WorkshopSection = () => {
   };
 
   return (
-    <div className="container">
-      <div className="row justify-content-center">
+    <div className="container" >
+      <div className="row justify-content-center" >
         {images.map((image, index) => (
           <div className="col-12 col-md-12 col-lg-3 mb-3" key={index}> {/* Full width on small and medium screens, 3 columns on large screens */}
             <img src={image} alt={`Workshop ${index}`} className="img-fluid" style={styles.image} />
@@ -78,14 +78,14 @@ const WorkshopSection = () => {
         </p>
       </div>
       {/* New Section */}
-      <div className="additional-section mt-5">
+      <div className="additional-section mt-5" >
         <p className='text-center'>
           The success of our workshop was not just reflected in the projects created but also in the overwhelming positive feedback we received from the participants. <br /> <br />
           Here’s a glimpse into how the students rated various aspects of the workshop, from content quality and
         </p>
         <div className="row justify-content-center">
           {newImages.map((image, index) => (
-            <div className="col-12 col-sm-6 col-lg-6 mb-3" key={index}> {/* Full width on small screens, 2 columns on large screens */}
+            <div className="col-12 col-sm-6 col-lg-4 mb-3" key={index}> {/* Full width on small screens, 2 columns on large screens */}
               <img src={image.src} alt={image.title} className="img-fluid" style={styles.image} />
               <div style={styles.title}>{image.title}</div>
             </div>

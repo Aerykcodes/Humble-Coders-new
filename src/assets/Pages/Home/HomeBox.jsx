@@ -12,7 +12,7 @@ function HomeBox({ heading, content }) {
           border-left: 5px solid darkblue;
           padding: 20px;
           margin-bottom: 20px;
-          background-color: #f9f9f9;
+          background-color: #f7fbfe;
           border-radius: 8px;
           box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
           text-align: center; /* Default alignment */
