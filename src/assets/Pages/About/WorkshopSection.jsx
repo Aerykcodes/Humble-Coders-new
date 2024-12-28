@@ -3,12 +3,7 @@ import Picture1 from './Images/Pic1.jpg';
 import Picture2 from './Images/Picture2.jpg';
 import Picture3 from './Images/Picture3.jpg';
 import Picture4 from './Images/Picture4.jpg';
-import NewPicture1 from './Images/NewPicture1.jpg';
-import NewPicture2 from './Images/NewPicture2.jpg';
-import NewPicture3 from './Images/NewPicture3.jpg';
-import NewPicture4 from './Images/NewPicture4.jpg';
-import NewPicture5 from './Images/NewPicture5.jpg';
-import NewPicture6 from './Images/NewPicture6.jpg';
+import PieChart from '../Home/PieChart'; // Ensure you have the PieChart component
 
 const WorkshopSection = () => {
   const images = [
@@ -18,13 +13,51 @@ const WorkshopSection = () => {
     Picture4
   ];
 
-  const newImages = [
-    { src: NewPicture1, title: 'Content relevance' },
-    { src: NewPicture2, title: 'Knowledge and expertise of instructors' },
-    { src: NewPicture3, title: 'Overall experience' },
-    { src: NewPicture4, title: 'Hands-on activities/coding sessions' },
-    { src: NewPicture5, title: 'Was the workshop environment conductive to learning' },
-    { src: NewPicture6, title: 'Confidence Level: Applying Workshop Skills to Real-World App Development Projects' }
+  const pieData = [
+    [
+      { name: 'Very Relevant', value: 46.3 },
+      { name: 'Relevant', value: 53.7 },
+      { name: 'Neutral', value: 0 },
+      { name: 'Irrelevant', value: 0 }
+    ],
+    [
+      { name: 'Excellent', value: 36.6 },
+      { name: 'Good', value: 63.4 },
+      { name: 'Average', value: 0 },
+      { name: 'Poor', value: 0 }
+    ],
+    [
+      { name: 'Excellent', value: 34.1 },
+      { name: 'Good', value: 65.9 },
+      { name: 'Average', value: 0 },
+      { name: 'Poor', value: 0 }
+    ],
+    [
+      { name: 'Excellent', value: 65.9 },
+      { name: 'Good', value: 29.3 },
+      { name: 'Average', value: 4.8 },
+      { name: 'Poor', value: 0 }
+    ],
+    [
+      { name: 'Yes', value: 95.1 },
+      { name: 'Somewhat', value: 4.9 },
+      { name: 'No', value: 0 }
+    ],
+    [
+      { name: 'Very Confident', value: 41.5 },
+      { name: 'Confident', value: 41.5 },
+      { name: 'Somewhat Confident', value: 17.1 },
+      { name: 'Not Confident', value: 0 }
+    ]
+  ];
+
+  const titles = [
+    'Content relevance',
+    'Knowledge and expertise of instructors',
+    'Overall experience',
+    'Hands-on activities/coding sessions',
+    'Was the workshop environment conducive to learning',
+    'Confidence Level: Applying Workshop Skills to Real-World App Development Projects'
   ];
 
   const styles = {
@@ -84,10 +117,10 @@ const WorkshopSection = () => {
           Here’s a glimpse into how the students rated various aspects of the workshop, from content quality and
         </p>
         <div className="row justify-content-center">
-          {newImages.map((image, index) => (
+          {pieData.map((data, index) => (
             <div className="col-12 col-sm-6 col-lg-4 mb-3" key={index}> {/* Full width on small screens, 2 columns on large screens */}
-              <img src={image.src} alt={image.title} className="img-fluid" style={styles.image} />
-              <div style={styles.title}>{image.title}</div>
+              <PieChart data={data} />
+              <div style={styles.title}>{titles[index]}</div>
             </div>
           ))}
         </div>

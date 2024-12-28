@@ -1,6 +1,7 @@
 @font-face {
-   font-family: 'Copperplate Gothic Bold'; src: url('../../Font/copperplategothic_bold.ttf') format('truetype'); 
-  }
+  font-family: 'Copperplate Gothic Bold';
+  src: url('../../Font/copperplategothic_bold.ttf') format('truetype');
+}
 
 .Home-background {
   background-color: #d7edf7;
@@ -10,11 +11,11 @@
 }
 
 .homepage-container {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .header-box-container {
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   padding: 20px;
   border-left: 5px solid darkblue;
   background-color: #f9f9f9;
@@ -24,11 +25,12 @@
   width: 80%; /* Default width for larger screens */
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 0px; /* Adjusted margin-top value */
 }
 
 .header-box {
   text-align: center;
+  margin-top: 0; /* Ensure no extra margin on header-box */
 }
 
 .homepage-title {
@@ -84,8 +86,8 @@
   color: purple;
 }
 
-.textbox-0{
-  font-family: 'Copperplate Gothic Bold' ;
+.textbox-0 {
+  font-family: 'Copperplate Gothic Bold';
   color: #4e5f7a;
 }
 
@@ -99,3 +101,27 @@
   color: #304673; /* Optional: change color on hover */
 }
 
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three items per row */
+  margin: 0 auto; /* Center aligns the list horizontally */
+  padding: 0; /* Removes default padding */
+  text-align: center; /* Centers the list items' text */
+  width: 80%; /* Ensures the content stays centered and balanced */
+  list-style-position: inside; /* Places bullets inside the content box */
+  gap: 10px; /* Adds spacing between items */
+}
+
+@media (max-width: 596px) {
+  .projects-list {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+}
+
+/* Custom CSS for PieChart Legend Positioning */
+.custom-legend {
+  font-size: 12px;
+  text-align: left;
+  margin-left: 50px; /* Adjust this value to move the legend to the left */
+  margin-top: -150px;
+}

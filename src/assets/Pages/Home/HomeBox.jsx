@@ -5,12 +5,13 @@ function HomeBox({ heading, content }) {
   return (
     <div className="homebox-container">
       <h4 className="homebox-heading">{heading}</h4>
+      <br />
       <p className="homebox-content">{content}</p>
 
       <style jsx>{`
         .homebox-container {
-          border-left: 5px solid darkblue;
           padding: 20px;
+          border-left : 5px solid darkblue;
           margin-bottom: 20px;
           background-color: #f7fbfe;
           border-radius: 8px;
@@ -18,9 +19,11 @@ function HomeBox({ heading, content }) {
           text-align: center; /* Default alignment */
         }
 
-        .homebox-heading {
-          text-align: center; /* Center the heading */
-        }
+      .homebox-heading {
+  text-align: center; /* Center the heading */
+  color: #4263a6; /* Set the text color */
+  }
+
 
         .homebox-content {
           text-align: left; /* Left align the content */
