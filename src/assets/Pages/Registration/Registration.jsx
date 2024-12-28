@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure you have Bootstrap incl
 import Navbar from '../../Navbar/Navbar';
 import './Registration.css';
 import SiteFooter from '../../SiteFooter/SiteFooter';
+import RegisterButton from '../../RegisterButton/RegisterButton';
 
 const Registration = () => {
   return (
@@ -22,16 +23,7 @@ const Registration = () => {
             <p><strong>• Number of seats :</strong> 200 seats</p>
             <p><strong>• Target Audience:</strong> Students from any stream and from any year</p>
             <p><strong>• Fees:</strong> <strike>Rs 1180</strike> 799/- (18% GST Included) <span className="highlight-box">Till 1st January</span></p>
-            <p>
-              <strong>• Registration Link:</strong>{' '}
-              <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdCAQzqkVE7d52jLucXsZBzkVNx__dUB7FvhwYjFnIjer4beA/viewform?usp=sf_link" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Register Here
-              </a>
-            </p>
+           <RegisterButton/>
           </div>
         </div>
 
