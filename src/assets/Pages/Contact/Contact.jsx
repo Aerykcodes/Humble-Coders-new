@@ -5,7 +5,7 @@ import SiteFooter from '../../SiteFooter/SiteFooter';
 import ansh from './ansh.jpg'
 import aaryan from './aaryan2.jpg'
 import ritvik from './ritvik2.jpg'
-import shreya from './shreya2.jpg'
+import shreya from './shreya.jpg'
 import sharanya from './sharanya.jpg'
 import Ishank from './ishank.png'
 import { FaPhone, FaEnvelope, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
@@ -209,7 +209,7 @@ const Contact = () => {
 
           {/* Right Section: Contact Us */}
           <div className="right-section">
-            <h2 className="heading">Contact Us</h2>
+            <h2 className="heading2">Contact Us</h2>
             <ul className="contact-info">
               <li className="contact-item">
                 <FaPhone id="p1" style={{ transform: "scaleX(-1)" }} />
