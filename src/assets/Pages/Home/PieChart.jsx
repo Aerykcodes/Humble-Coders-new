@@ -19,8 +19,6 @@ const renderCustomizedLegend = (props) => {
 };
 
 const PieChart = ({ data }) => {
-  const renderLabel = ({ name }) => `${name}`; // Updated to show only the name
-
   return (
     <RechartPieChart width={420} height={360}>
       <Pie
@@ -28,7 +26,6 @@ const PieChart = ({ data }) => {
         cx={200}
         cy={200}
         labelLine={false}
-        label={renderLabel}
         outerRadius={150}
         fill="#8884d8"
         dataKey="value"
