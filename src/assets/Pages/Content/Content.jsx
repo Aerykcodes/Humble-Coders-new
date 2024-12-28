@@ -361,7 +361,7 @@ function Content() {
     } 
     
   ];
-  <button className="registration-button">Register Now</button>
+
   return (
     <>
       <Navbar />
