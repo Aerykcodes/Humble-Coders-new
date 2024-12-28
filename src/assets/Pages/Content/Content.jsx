@@ -5,6 +5,7 @@ import Navbar from '../../Navbar/Navbar'; // Import Navbar component
 import ContentBox from './ContentBox'; // Import ContentBox component
 import SiteFooter from '../../SiteFooter/SiteFooter';
 
+
 function Content() {
   const contentData = [
     {
@@ -389,13 +390,14 @@ function Content() {
   <li><strong>Day 11:</strong> Firebase Integration</li>
   <li><strong>Day 12 & Day 13:</strong> Develop your Real-Time Chatting Application</li>
   <li><strong>Day 14 & Day 15:</strong> Notifications, Services, and Receivers</li>
-  <div className="top"><a 
+{/*   <div className="top"><a 
     href="https://docs.google.com/forms/d/e/1FAIpQLSdCAQzqkVE7d52jLucXsZBzkVNx__dUB7FvhwYjFnIjer4beA/viewform?usp=sf_link" 
     target="_blank" 
     rel="noopener noreferrer"
   >
     <button class="registration-button">Register Now</button>
-  <button className="registration-button">Register Now</button> </a></div>
+  <button className="registration-button">Register Now</button> </a></div> */}
+  <RegisterButton />
   
 </ul>
 
