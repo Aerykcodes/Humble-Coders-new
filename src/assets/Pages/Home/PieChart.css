@@ -1,3 +1,5 @@
+/* PieChart.css */
+
 .custom-legend {
   font-size: 12px;
   text-align: left;
@@ -5,3 +7,38 @@
   margin-top: -150px;
 }
 
+@media (max-width: 767px) {
+  .custom-legend {
+    margin-left: 0; /* Reset margin for small screens */
+    margin-top: 10px; /* Add space above the legend */
+    text-align: center; /* Center align legend for small screens */
+  }
+  
+  .recharts-wrapper {
+    width: 100% !important; /* Ensure the chart uses full width on small screens */
+    height: auto !important; /* Maintain aspect ratio */
+  }
+
+  .recharts-surface {
+    width: 100% !important; /* Ensure the chart uses full width on small screens */
+    height: auto !important; /* Maintain aspect ratio */
+  }
+
+  .recharts-pie {
+    width: 100% !important; /* Ensure the chart uses full width on small screens */
+    height: auto !important; /* Maintain aspect ratio */
+  }
+
+  /* Ensure the legend is below the chart */
+  .custom-legend {
+    margin-top: 20px;
+  }
+}
+
+/* Ensure proper sizing for the chart containers */
+@media (max-width: 576px) {
+  .col-12.col-sm-6.col-lg-4 {
+    flex: 0 0 100%; /* Set width to 100% for extra small screens */
+    max-width: 100%;
+  }
+}

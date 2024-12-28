@@ -7,6 +7,7 @@ import SiteFooter from '../../SiteFooter/SiteFooter';
 import PieChart from './PieChart'; // Import PieChart component
 import RegisterButton from '../../RegisterButton/RegisterButton';
 import logo1 from './logo1.png';
+import MoreButton from './MoreButton';
 
 const data1 = [
   { name: 'Excellent', value: 36.6 },
@@ -89,12 +90,13 @@ function Home() {
               <h4 className="text-center mt-2">Was the workshop environment conducive to learning</h4>
             </div>
           </div>
-        </div>
+        </div><br />
+        <MoreButton/>
         <br />
         <br /><br />
         <h4 className="text-center">Feel free to reach out at</h4>
         <p className="text-center">executives@humblecoders.in <br /> Ansh Bajaj - 8685988991 <br />Ishank Goyal - 8708667212 <br />Aaryan Kaushal - 9501951970 </p>
-        <br /><br /><br /><br />
+        <br />
       </div>
       <SiteFooter />
     </div>

@@ -83,6 +83,7 @@ const WorkshopSection = () => {
   };
 
   return (
+    <>
     <div className="container" >
       <div className="row justify-content-center" >
         {images.map((image, index) => (
@@ -111,10 +112,11 @@ const WorkshopSection = () => {
         </p>
       </div>
       {/* New Section */}
-      <div className="additional-section mt-5" >
+      
+    </div>
+    <div className="additional-section mt-5" >
         <p className='text-center'>
-          The success of our workshop was not just reflected in the projects created but also in the overwhelming positive feedback we received from the participants. <br /> <br />
-          Here’s a glimpse into how the students rated various aspects of the workshop, from content quality and
+          <h2>Overwhelming Positive Feedback</h2>
         </p>
         <div className="row justify-content-center">
           {pieData.map((data, index) => (
@@ -125,7 +127,7 @@ const WorkshopSection = () => {
           ))}
         </div>
       </div>
-    </div>
+  </>
   );
 };
 
