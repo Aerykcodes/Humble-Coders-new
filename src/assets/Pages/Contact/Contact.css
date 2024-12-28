@@ -328,3 +328,40 @@ nav {
         font-size: 0.8rem;
     }
 }
+.contact-container {
+  display: flex;  /* Use flex to arrange both sections side by side */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: space-between; /* Make sure the right section moves to the right */
+  gap: 20px; /* Spacing between the left and right sections */
+  padding: 20px;
+}
+
+/* Left Section */
+.left-section {
+  flex: 1; /* Allow the left section to take up the remaining space */
+  text-align: center; /* Center the content of the left section */
+}
+
+/* Right Section */
+.right-section {
+  width: 35%; /* Set a fixed width for the right section */
+  padding: 30px;
+  background-color: #ffffff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  text-align: left;
+  margin-top: 20px; /* Added some spacing for better alignment */
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 1024px) {
+  .contact-container {
+    justify-content: flex-end; /* Align the right section to the right of the container */
+    gap: 30px; /* Increase space between the sections if needed */
+  }
+
+  /* Optional: Adjust right section width on larger screens if needed */
+  .right-section {
+    width: 30%; /* Adjust the width of the right section for larger screens */
+  }
+}
