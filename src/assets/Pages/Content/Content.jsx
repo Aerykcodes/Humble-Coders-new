@@ -5,6 +5,7 @@ import Navbar from '../../Navbar/Navbar'; // Import Navbar component
 import ContentBox from './ContentBox'; // Import ContentBox component
 import SiteFooter from '../../SiteFooter/SiteFooter';
 
+
 function Content() {
   const contentData = [
     {
@@ -53,7 +54,7 @@ function Content() {
       `
     },
     {
-      heading: "Day 2: Mastering Kotlin and Jetpack Compose Basics",
+      heading: "Day 2: Kotlin and Jetpack Compose Basics",
       content: `
         <ul>
           <li><strong>Topics of the Day:</strong></li>
@@ -97,7 +98,7 @@ function Content() {
       `
     },
     {
-      heading: "Day 3 & Day 4: Build your own CGPA calculator mobile application and deploy on GitHub",
+      heading: "Day 3 & Day 4:  CGPA calculator mobile application ",
       content: `
         <ul>
           <li><strong>Topics of the Day:</strong></li>
@@ -197,7 +198,7 @@ function Content() {
       // `
     },
     {
-      heading: "Day 9: Crafting Your Personal AI Companion",
+      heading: "Day 9:   Personal AI Companion",
       // content: `
       //   <ul>
       //     <li><strong>Topics of the Day:</strong></li>
@@ -297,7 +298,7 @@ function Content() {
       // `
     },
     {
-      heading: "Day 12 & Day 13: Develop your Real-Time Chatting Application",
+      heading: "Day 12 & Day 13: Real-Time Chatting Application",
       // content: `
       //   <ul>
       //     <li><strong>Topics of the Day:</strong></li>
@@ -359,6 +360,7 @@ function Content() {
       //   </ul>
       // `
     } 
+    
   ];
 
   return (
@@ -366,7 +368,7 @@ function Content() {
       <Navbar />
       <div className="Content-container">
         <header className="Title-box">
-        <h4 className="text-center"> Course Details: <br /> </h4>
+        <h4 className="heading-1"> Course Details <br /> </h4>
 
 <ul>
   <li><strong>Time :</strong> 6:00 to 8:00 PM </li>
@@ -381,18 +383,27 @@ function Content() {
 <ul>
   <li><strong>Day 1:</strong> Introduction, Android Studio Setup and Kotlin Basics</li>
   <li><strong>Day 2:</strong> Mastering Kotlin and Jetpack Compose Basics</li>
-  <li><strong>Day 3 & Day 4:</strong> Build your own CGPA calculator mobile application and deploy on GitHub</li>
+  <li><strong>Day 3 & Day 4:</strong> Build your own CGPA calculator mobile application </li>
   <li><strong>Day 5 to Day 8:</strong> Advanced Wishlist App</li>
   <li><strong>Day 9:</strong> Crafting Your Personal AI Companion</li>
   <li><strong>Day 10:</strong> Bluetooth Scanner App</li>
   <li><strong>Day 11:</strong> Firebase Integration</li>
   <li><strong>Day 12 & Day 13:</strong> Develop your Real-Time Chatting Application</li>
   <li><strong>Day 14 & Day 15:</strong> Notifications, Services, and Receivers</li>
+{/*   <div className="top"><a 
+    href="https://docs.google.com/forms/d/e/1FAIpQLSdCAQzqkVE7d52jLucXsZBzkVNx__dUB7FvhwYjFnIjer4beA/viewform?usp=sf_link" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button class="registration-button">Register Now</button>
+  <button className="registration-button">Register Now</button> </a></div> */}
+  <RegisterButton />
+  
 </ul>
 
         </header>
         <div className="Box-Container container">
-          <h2 className="text-center my-4">Course Schedule</h2>
+          <h2 className="Course-schedule-heading">Course Schedule</h2>
           <h3 className="text-center my-4">Week 1: Building Foundations and Core Android Concepts</h3>
           <div className="row">
             {contentData.slice(0, 4).map((section, index) => (
@@ -404,7 +415,7 @@ function Content() {
               </div>
             ))}
           </div>
-          <h3 className="text-center my-4">Week 2: Advanced Projects and Modern Development Techniques</h3>  {/* Inserted heading */}
+          <h3 className="heading-2">Week 2: Advanced Projects and Modern Development Techniques</h3>  {/* Inserted heading */}
           <div className="row">
             {contentData.slice(4).map((section, index) => (
               <div className="col-12" key={index}>
@@ -412,11 +423,19 @@ function Content() {
                   heading={section.heading} 
                   content={<div dangerouslySetInnerHTML={{ __html: section.content }} />} 
                 />
+                
               </div>
             ))}
           </div>
         </div>
       </div>
+      <div className="bottom-registration"><a 
+    href="https://docs.google.com/forms/d/e/1FAIpQLSdCAQzqkVE7d52jLucXsZBzkVNx__dUB7FvhwYjFnIjer4beA/viewform?usp=sf_link" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+  <button className="registration-button-1">Register Now</button> </a>
+</div>
       <SiteFooter />
     </>
   );

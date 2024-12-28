@@ -9,7 +9,10 @@
   margin-bottom: 20px;
   margin-top: 110px; /* Increase this value to move the box further down */
 }
-
+.heading-1{
+  font-size: 30px;
+  text-align: center;
+}
 
 .Box-Container {
   padding: 20px;
@@ -19,8 +22,65 @@
  
 }
 
+
 .Box-heading{
   text-align: center;
   margin-bottom: 20px;
 }
+.Course-schedule-heading {
+  margin-top: 10px; 
+  text-align: center;/* Decrease the margin-top to reduce the space above the heading */
+}
+.heading-2{
+  margin-top: 10px; 
+  text-align: center;
+  margin-bottom:20px;
+}
+/* This is the container for the registration button */
+.registration-button-container {
+  display: flex;
+  justify-content: center;  /* Centers the button horizontally */
+  align-items: center;      /* Centers the button vertically */
+  /* position: fixed; */
+  top: 50%;                  /* Positions the button vertically in the middle */
+  left: 50%;                 /* Positions the button horizontally in the middle */
+  transform: translate(-50%, -50%); /* Adjusts the button's position to be exactly centered */
+  width: auto;
+  height: auto;
+}
 
+
+/* The button itself */
+.top{
+  padding-top: 10px;
+}
+.registration-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.registration-button:hover {
+  background-color: #45a049;
+}
+.registration-button-1{
+  margin-left: 550px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.registration-button-1:hover {
+  background-color: #45a049;
+}
+.bottom-registration{
+  padding-top:10px;
+  padding-bottom: 10px;
+}

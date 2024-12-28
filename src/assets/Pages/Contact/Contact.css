@@ -60,53 +60,45 @@
     flex: 1; /* Allow it to grow and fill remaining space */
     margin: 0;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8); /* Black container for contrast */
+    background-color:  #f7fbfe; /* Black container for contrast */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     gap: 20px;
     height: auto; /* Allow the content to expand */
     max-width: 100%;
     margin-bottom: 40px;
     margin-top: 70px;
+    
   }
   
   /* Left Section */
-  .left-section {
-    display: flex;
-    align-items: center;
-    width: 60%;
-  }
-  
-  .vertical-heading {
-    font-size: 2.5em;
-    font-weight: bold;
-    font-family: "Dancing Script", cursive;
-  
-    color: #fff;
-    margin-bottom: 30px;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    white-space: nowrap;
-    margin-right: 20px;
-  }
-  
-  .founders-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    width: 100%;
-  }
-  
-  /* Founder Cards */
-  .founder-card {
-    position: relative;
-    width: 100%;
-    height: 300px; /* Set a fixed height for uniformity */
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    border-radius: 0px; /* Stack the content vertically */
-  }
+  /* Make the heading horizontal and style it */
+.horizontal-heading {
+  font-size: 2rem; /* Adjust font size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center-align the text */
+  margin-bottom: 20px; /* Add spacing between the heading and grid */
+}
+
+/* Adjust the layout of the left section */
+.left-section {
+  display: flex;
+  flex-direction: column; /* Stack heading above the grid */
+  align-items: center; /* Center-align content horizontally */
+}
+
+/* Style the founders grid */
+.founders-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow grid to wrap for responsive design */
+  justify-content: center; /* Center-align grid content */
+  gap: 20px; /* Add spacing between founder cards */
+}
+
+.founder-card {
+  width: 200px; /* Define card size */
+  text-align: center; /* Align text in each card */
+}
+
   
   .founder-image img {
     width: 100%;
@@ -126,94 +118,110 @@
   }
   
   .founder-title {
-    color: #fff;
+    color: black;
     font-size: 0.9em;
     margin-bottom: 5px;
   }
   
   .founder-name {
-    color: #fff;
+    color:black;
     font-size: 1.1em;
     font-weight: bold;
   }
   
   /* Right Section */
   .right-section {
-    width: 35%;
-    padding: 20px;
-    padding-left: 20px;
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 35%; /* Maintain a reasonable width */
+    padding: 30px; /* Add consistent padding */
+    background-color: #ffffff; /* Add subtle contrast to the right section */
+    border-radius: 8px; /* Rounded corners for a polished look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow for a cleaner feel */
+    text-align: left; /* Align text to the left for readability */
   }
   
+  /* Heading in the Right Section */
   .heading {
-    margin-left: 130px;
-    font-size: 2em;
-    font-family: "Antonio", sans-serif;
-  
+    font-size: 2rem; /* Larger, clear font for the heading */
+    
     font-weight: bold;
-    color: #fff;
+    color: #333333; /* Softer black for less strain on the eyes */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    text-align: center; /* Center-align the heading */
   }
   
+  /* Contact Information List */
   .contact-info {
     display: flex;
-    flex-direction: column;
-    color: #fff;
-    list-style: none;
-    padding-left: 0;
-    gap: 0px;
+    flex-direction: column; /* Stack items vertically */
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    gap: 15px; /* Add spacing between items */
   }
   
   .contact-item {
-    margin-left: 30px;
-    display: flex;
-    align-items: center;
-    font-size: 1.1em;
-    color: #fff;
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Vertically center align content */
+    font-size: 1rem; /* Clear font size for contact details */
+    color: #333333; /* Use softer black for text */
+    padding: 10px; /* Add padding for better spacing */
+    border-bottom: 1px solid #e0e0e0; /* Add a light divider for separation */
   }
   
+  /* Icons in Contact Items */
   .contact-item svg {
-    margin-top: 20px;
-    margin-right: 50px;
-    font-size: 1.5em;
-    color: #FFFF00;
+    margin-right: 15px; /* Space between icon and text */
+    font-size: 100rem; /* Larger icon for better readability */
+    color: #0077b5; /* Accent color for icons */
   }
   
-  /* Add styling for the email item */
+  /* Email Item Specific Styling */
   .contact-item.email {
-    margin-top: 0px;
-    color: #fff;
-  }
-  
-  #p1 {
-    color: rgba(0, 0, 0, 0);
-  }
-  
-  #p2 {
-    color: rgba(0, 0, 0, 0);
+    border: none; /* Remove bottom border for email item */
+    margin-top: 10px;
+    /* margin-left: 100px; */
   }
   
   .contact-email {
-    margin-top: 10px;
-    display: flex;
+    
+    margin-top: 20px;
+    display: flex; /* Align icon and email text horizontally */
     align-items: center;
-    margin-left: 0px;
-    color: #fff;
+    /* margin-right:10px; */
   }
   
   .contact-email svg {
-    margin-right: 50px;
-    margin-left: -5px;
-    font-size: 2rem;
-    color: #FFFF00;
+    
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #333333; /* Match other icons */
   }
+  
+  #p1 {
+    color: black;
+  }
+  #p2 {
+    color: black;
+  }
+  
+  .contact-item svg {
+    font-size: 1rem; /* Larger icon size */
+    margin-bottom: px; /* Space between icon and text */
+    color: black; /* Accent color for icons */
+  }
+  
+  /* Specific Styling for Email */
+  /* .contact-item.email {
+    margin-top: 20px;
+    text-align: center;
+  } */
   
   .contact-social-media {
     display: flex;
-    justify-content: flex-start;
-    margin-top: 20px;
-    gap: 35px;
-    margin-left: 30px;
+    justify-content: center; /* Center align the icons horizontally */
+    align-items: center; /* Ensure vertical centering */
+    margin-top: 30px;
+    gap: 20px; /* Spacing between icons */
   }
   
   .contact-social-media a {
