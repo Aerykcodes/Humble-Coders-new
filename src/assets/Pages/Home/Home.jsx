@@ -26,12 +26,13 @@ function Home() {
   return (
     <div className='Home-background'>
       <Navbar />
-      <img
+            <img
         src={logo1}
         alt="Course banner"
-        className="img-fluid"
+        className="img-fluid responsive-logo"
         style={{ maxWidth: '600px', height: 'auto', display: 'block', margin: '80px auto' }} // Adjust the size as needed
       />
+
       <div className="homepage-container">
         <div className="header-box-container">
           <header className="header-box" style={{ marginTop: '0' }}> {/* Removed extra margin */}

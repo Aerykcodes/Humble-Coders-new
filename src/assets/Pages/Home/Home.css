@@ -118,9 +118,19 @@
 }
 
 /* Custom CSS for PieChart Legend Positioning */
-.custom-legend {
-  font-size: 12px;
-  text-align: left;
-  margin-left: 50px; /* Adjust this value to move the legend to the left */
-  margin-top: -150px;
+/* Home.css */
+
+@media (max-width: 767px) {
+  .responsive-logo {
+    max-width: 100%; /* Ensure the logo takes full width on small screens */
+    margin: 20px auto; /* Adjust margin for small screens */
+  }
 }
+
+@media (max-width: 576px) {
+  .responsive-logo {
+    max-width: 100%; /* Ensure the logo takes full width on extra small screens */
+    margin: 10px auto; /* Adjust margin for extra small screens */
+  }
+}
+
