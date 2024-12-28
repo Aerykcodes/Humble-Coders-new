@@ -4,7 +4,7 @@ import './Contact.css';
 import SiteFooter from '../../SiteFooter/SiteFooter';
 import ansh from './ansh.jpg'
 import aaryan from './aaryan2.jpg'
-import ritvik from './ritvik.jpg'
+import ritvik from './ritvik2.jpg'
 import shreya from './shreya2.jpg'
 import sharanya from './sharanya.jpg'
 import Ishank from './ishank.png'
@@ -19,9 +19,7 @@ const Contact = () => {
         <div className="contact-container">
           {/* Left Section: Meet the Founders */}
           <div className="left-section">
-            <div className="vertical-heading">
-              Meet the Founders
-            </div>
+          <h2 className="horizontal-heading">Meet the Founders</h2>
             <div className="founders-grid">
               <div className="founder-card" style={{ margin: "10px" }}>
                 <div
