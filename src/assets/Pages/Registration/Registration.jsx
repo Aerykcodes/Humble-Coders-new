@@ -14,15 +14,15 @@ const Registration = () => {
           <h2 className="text-center">Registration Information</h2>
           <br />
           <div className="registration-details">
-            <p><strong>• Ending Date:</strong> 21st January 2024</p>
-            <p><strong>• Duration:</strong> 14 Days</p>
+            <p><strong>• Start Date:</strong> 13th January 2025</p>
+            <p><strong>• Duration:</strong> 2 weeks</p>
             <p><strong>• Mode:</strong> Online mode</p>
             <p><strong>• Platform: </strong> Zoom </p>
             <p><strong>• Timings:</strong> 6:00 pm to 8:00 pm</p>
-            <p><strong>• Last Date for Registration :</strong> 3rd January 2024</p>
+            <p><strong>• Last Date for Registration :</strong> 10th January 2024</p>
             <p><strong>• Number of seats :</strong> 200 seats</p>
             <p><strong>• Target Audience:</strong> Students from any stream and from any year</p>
-            <p><strong>• Fees:</strong> <strike>Rs 1180</strike> 799/- (18% GST Included) <span className="highlight-box">Till 1st January</span></p>
+            <p><strong>• Fees:</strong> <strike>Rs 1180</strike> 799/- (18% GST Included) <span className="highlight-box">Till 3rd January</span></p>
            <RegisterButton/>
           </div>
         </div>

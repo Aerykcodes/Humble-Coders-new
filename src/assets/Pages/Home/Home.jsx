@@ -40,8 +40,8 @@ function Home() {
             <h3 className='textbox-0'><strong>With Kotlin and Jetpack Compose </strong></h3>
             <p className="text-center homepage-description"></p>
             <div className="course-details text-center">
-              <p className='textbox-1'><strong>15 days training program <br />For beginners and experienced developers, UG/PG students</strong></p>
-              <p className='textbox-2'><strong>Last Registration Date - 3 January 2025</strong></p>
+              <p className='textbox-1'><strong>2 Weeks training program <br />For beginners and experienced developers, UG/PG students</strong></p>
+              <p className='textbox-2'><strong>Last Registration Date - 10 January 2025</strong></p>
               <p className='textbox-3'><strong>Organized by: Humble Coders</strong></p>
             </div>
             <RegisterButton />
