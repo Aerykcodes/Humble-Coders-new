@@ -120,17 +120,30 @@
 /* Custom CSS for PieChart Legend Positioning */
 /* Home.css */
 
+.responsive-logo {
+  display: block;
+  margin: 80px auto; /* Centers the image horizontally */
+  max-width: 600px; /* Default maximum width */
+  height: auto; /* Maintain aspect ratio */
+  position: relative;
+  left: -20px; /* Move slightly to the left */
+  transform: translateX(-10px); /* Fine-tune the position */
+}
+
 @media (max-width: 767px) {
   .responsive-logo {
-    max-width: 100%; /* Ensure the logo takes full width on small screens */
-    margin: 20px auto; /* Adjust margin for small screens */
+    max-width: 90%; /* Adjust to fit within smaller screens */
+    margin: 20px auto; /* Center the image with a smaller margin */
+    left: -10px; /* Move slightly to the left */
+    transform: translateX(-5px); /* Fine-tune the position */
   }
 }
 
 @media (max-width: 576px) {
   .responsive-logo {
     max-width: 100%; /* Ensure the logo takes full width on extra small screens */
-    margin: 10px auto; /* Adjust margin for extra small screens */
+    margin: 10px auto; /* Center the image with an even smaller margin */
+    left: -5px; /* Move slightly to the left */
+    transform: translateX(-20px); /* Fine-tune the position */
   }
 }
-
