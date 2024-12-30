@@ -14,7 +14,7 @@ const Registration = () => {
           <h2 className="text-center">Registration Information</h2>
           <br />
           <div className="registration-details">
-            <p><strong>• Start Date:</strong> 13th January 2025</p>
+            <p><strong>• Starting Date:</strong> 13th January 2025</p>
             <p><strong>• Duration:</strong> 2 weeks</p>
             <p><strong>• Mode:</strong> Online mode</p>
             <p><strong>• Platform: </strong> Zoom </p>
