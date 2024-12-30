@@ -22,7 +22,7 @@ const Registration = () => {
             <p><strong>• Last Date for Registration :</strong> 10th January 2025</p>
             <p><strong>• Number of seats :</strong> 200 seats</p>
             <p><strong>• Target Audience:</strong> Students from any stream and from any year</p>
-            <p><strong>• Fees:</strong> <strike>Rs 1180</strike> 799/- (18% GST Included) <span className="highlight-box">Till 3rd January</span></p>
+            <p><strong>• Fees:</strong> <strike>Rs 1180</strike> 799/- (18% GST Included)</p>
            <RegisterButton/>
           </div>
         </div>
