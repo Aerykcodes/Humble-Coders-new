@@ -41,7 +41,9 @@ function Home() {
             <p className="text-center homepage-description"></p>
             <div className="course-details text-center">
               <p className='textbox-1'><strong>1 month training program <br />For beginners and experienced developers, UG/PG students</strong></p>
-              <p className='textbox-2'><strong>Last Registration Date - 10th January 2025</strong> <br /><strong>Course Starting Date: 1st February 2025</strong></p>
+              <p className='textbox-2'>
+                {/* <strong>Last Registration Date - 10th January 2025</strong> <br /> */}
+                <strong>Course Starting Date: 1st February 2025</strong></p>
               <p className='textbox-3'><strong>Organized by: Humble Coders</strong></p>
             </div>
             <RegisterButton 

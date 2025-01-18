@@ -1,10 +1,10 @@
 /* PieChart.css */
 
 .custom-legend {
-  font-size: 12px;
+  font-size: 10px;
   text-align: left;
   margin-left: 0px; /* Adjust this value to move the legend to the left */
-  margin-top: -150px;
+  margin-top: -155px;
 }
 
 

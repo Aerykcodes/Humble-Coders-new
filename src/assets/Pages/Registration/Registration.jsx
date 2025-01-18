@@ -19,7 +19,7 @@ const Registration = () => {
             <p><strong>• Mode:</strong> Online mode</p>
             <p><strong>• Platform: </strong> Zoom </p>
             <p><strong>• Timings:</strong> 6:00 pm to 8:00 pm</p>
-            <p><strong>• Last Date for Registration :</strong> 10th January 2025</p>
+            {/* <p><strong>• Last Date for Registration :</strong> 10th January 2025</p> */}
             <p><strong>• Number of seats :</strong> 200 seats</p>
             <p><strong>• Target Audience:</strong> Students from any stream and from any year</p>
             <p><strong>• Fees:</strong> <strike>Rs 1180</strike> 799/- (18% GST Included)</p>

@@ -10,7 +10,7 @@ import RegisterButton from '../../RegisterButton/RegisterButton';
 function Content() {
   const contentData = [
     {
-      heading: "Day 1: Introduction, Android Studio Setup and Kotlin Basics",
+      heading: "Topic 1: Introduction, Android Studio Setup and Kotlin Basics",
       content: `
         <ul>
           <li><strong>Topics of the Day:</strong></li>
@@ -55,7 +55,7 @@ function Content() {
       `
     },
     {
-      heading: "Day 2: Kotlin and Jetpack Compose Basics",
+      heading: "Topic 2: Kotlin and Jetpack Compose Basics",
       content: `
         <ul>
           <li><strong>Topics of the Day:</strong></li>
@@ -99,7 +99,7 @@ function Content() {
       `
     },
     {
-      heading: "Day 3 & Day 4:  CGPA calculator mobile application ",
+      heading: "Topic 3 :  CGPA calculator mobile application ",
       content: `
         <ul>
           <li><strong>Topics of the Day:</strong></li>
@@ -137,7 +137,7 @@ function Content() {
       `
     },
     {
-      heading: "Day 5 to Day 8: Advanced Wishlist App",
+      heading: "Topic 4 : Advanced Wishlist App",
       // content: `
       //   <ul>
       //     <li><strong>Topics of the Day:</strong></li>
@@ -199,7 +199,7 @@ function Content() {
       // `
     },
     {
-      heading: "Day 9:   Personal AI Companion",
+      heading: "Topic 5:   Personal AI Companion",
       // content: `
       //   <ul>
       //     <li><strong>Topics of the Day:</strong></li>
@@ -237,7 +237,7 @@ function Content() {
       // `
     },
     {
-      heading: "Day 10: Bluetooth Scanner App",
+      heading: "Topic 6 : Bluetooth Scanner App",
       // content: `
       //   <ul>
       //     <li><strong>Topics of the Day:</strong></li>
@@ -268,7 +268,7 @@ function Content() {
       // `
     },
     {
-      heading: "Day 11: Firebase Integration",
+      heading: "Topic 7: Firebase Integration",
       // content: `
       //   <ul>
       //     <li><strong>Topics of the Day:</strong></li>
@@ -299,7 +299,7 @@ function Content() {
       // `
     },
     {
-      heading: "Day 12 & Day 13: Real-Time Chatting Application",
+      heading: "Topic 8 : Real-Time Chatting Application",
       // content: `
       //   <ul>
       //     <li><strong>Topics of the Day:</strong></li>
@@ -332,7 +332,7 @@ function Content() {
       // `
     },
     {
-      heading: "Day 14 & Day 15: Notifications, Services, and Receivers",
+      heading: "Topic 9 : Notifications, Services, and Receivers",
       // content: `
       //   <ul>
       //     <li><strong>Topics of the Day:</strong></li>
@@ -382,15 +382,15 @@ function Content() {
 
 <p><strong>Brief Schedule:</strong></p>
 <ul>
-  <li><strong>Day 1:</strong> Introduction, Android Studio Setup and Kotlin Basics</li>
-  <li><strong>Day 2:</strong> Mastering Kotlin and Jetpack Compose Basics</li>
-  <li><strong>Day 3 & Day 4:</strong> Build your own CGPA calculator mobile application </li>
-  <li><strong>Day 5 to Day 8:</strong> Advanced Wishlist App</li>
-  <li><strong>Day 9:</strong> Crafting Your Personal AI Companion</li>
-  <li><strong>Day 10:</strong> Bluetooth Scanner App</li>
-  <li><strong>Day 11:</strong> Firebase Integration</li>
-  <li><strong>Day 12 & Day 13:</strong> Develop your Real-Time Chatting Application</li>
-  <li><strong>Day 14 & Day 15:</strong> Notifications, Services, and Receivers</li>
+  <li><strong>Topic 1:</strong> Introduction, Android Studio Setup and Kotlin Basics</li>
+  <li><strong>Topic 2:</strong> Mastering Kotlin and Jetpack Compose Basics</li>
+  <li><strong>Topic 3:</strong> Build your own CGPA calculator mobile application </li>
+  <li><strong>Topic 4:</strong> Advanced Wishlist App</li>
+  <li><strong>Topic 5:</strong> Crafting Your Personal AI Companion</li>
+  <li><strong>Topic 6:</strong> Bluetooth Scanner App</li>
+  <li><strong>Topic 7:</strong> Firebase Integration</li>
+  <li><strong>Topic 8:</strong> Develop your Real-Time Chatting Application</li>
+  <li><strong>Topic 9:</strong> Notifications, Services, and Receivers</li>
   <RegisterButton
    url="/registration" description="Register Now" newTab={false}
    />

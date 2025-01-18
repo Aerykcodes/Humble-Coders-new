@@ -20,13 +20,13 @@ const renderCustomizedLegend = (props) => {
 
 const PieChart = ({ data }) => {
   return (
-    <RechartPieChart width={420} height={360}>
+    <RechartPieChart width={360} height={300}>
       <Pie
         data={data.filter(item => item.value > 0)}
-        cx={200}
-        cy={200}
+        cx={180}
+        cy={150}
         labelLine={false}
-        outerRadius={150}
+        outerRadius={130}
         fill="#8884d8"
         dataKey="value"
       >

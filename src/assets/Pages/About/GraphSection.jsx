@@ -4,7 +4,7 @@ import PieChart from '../Home/PieChart'; // Ensure you have the PieChart compone
 const GraphSection = ({ pieData, titles, styles }) => {
   return (
     <div className="additional-section mt-5">
-      <h2 className="text-center">Overwhelming Positive Feedback</h2>
+      <h2 className="text-center">Overwhelming Positive Feedback</h2> <br /><br />
       <div className="row justify-content-center">
         {pieData.map((data, index) => (
           <div className="col-12 col-sm-6 col-lg-4 mb-3" key={index}> {/* Full width on small screens, 2 columns on large screens */}
