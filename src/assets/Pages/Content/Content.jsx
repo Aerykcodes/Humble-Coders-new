@@ -401,7 +401,7 @@ function Content() {
         </header>
         <div className="Box-Container container">
           <h2 className="Course-schedule-heading">Course Schedule</h2>
-          <h3 className="text-center my-4">Week 1: Building Foundations and Core Android Concepts</h3>
+          {/* <h3 className="text-center my-4">Week 1: Building Foundations and Core Android Concepts</h3> */}
           <div className="row">
             {contentData.slice(0, 4).map((section, index) => (
               <div className="col-12" key={index}>
@@ -412,7 +412,7 @@ function Content() {
               </div>
             ))}
           </div>
-          <h3 className="heading-2">Week 2: Advanced Projects and Modern Development Techniques</h3>  {/* Inserted heading */}
+          {/* <h3 className="heading-2">Week 2: Advanced Projects and Modern Development Techniques</h3>  Inserted heading */}
           <div className="row">
             {contentData.slice(4).map((section, index) => (
               <div className="col-12" key={index}>
