@@ -23,7 +23,7 @@ const Registration = () => {
             <p><strong>• Number of seats :</strong> 200 seats</p>
             <p><strong>• Target Audience:</strong> Students from any stream and from any year</p>
             <p><strong>• Fees:</strong> <strike>Rs 1180</strike> 799/- (18% GST Included)</p>
-            <p><strong>• Fees:</strong> <strike>Rs 799</strike> 400/- (18% GST Included) (For Thapar Students)</p>
+            <p><strong>• Fees:</strong> <strike>Rs 799</strike> 399/- (18% GST Included) (For Thapar Students)</p>
             
             <div 
                 className="d-flex justify-content-center align-items-center flex-column flex-md-row gap-2">
