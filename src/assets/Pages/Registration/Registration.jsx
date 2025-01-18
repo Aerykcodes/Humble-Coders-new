@@ -36,7 +36,7 @@ const Registration = () => {
               </div>
               <div>
                 <RegisterButton
-                  url="https://docs.google.com/forms/d/e/1FAIpQLSdCAQzqkVE7d52jLucXsZBzkVNx__dUB7FvhwYjFnIjer4beA/viewform?usp=sf_link"
+                  url="https://docs.google.com/forms/d/e/1FAIpQLSeLXEWICzHdDFgtIsb66BOoDTIyoUAT4KnX44Cxn9525VcK8Q/viewform?usp=header"
                   description="Register Now (THAPAR STUDENTS)"
                   newTab={true}
                   style={{ fontSize: '14px' }}
