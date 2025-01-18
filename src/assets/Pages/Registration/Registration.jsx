@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure you have Bootstrap included
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from '../../Navbar/Navbar';
 import './Registration.css';
 import SiteFooter from '../../SiteFooter/SiteFooter';
@@ -14,8 +14,8 @@ const Registration = () => {
           <h2 className="text-center">Registration Information</h2>
           <br />
           <div className="registration-details">
-            <p><strong>• Starting Date:</strong> 14th January 2025</p>
-            <p><strong>• Duration:</strong> 2 weeks</p>
+            <p><strong>• Starting Date:</strong> 1st February 2025</p>
+            <p><strong>• Duration:</strong> 1 month</p>
             <p><strong>• Mode:</strong> Online mode</p>
             <p><strong>• Platform: </strong> Zoom </p>
             <p><strong>• Timings:</strong> 6:00 pm to 8:00 pm</p>
@@ -23,11 +23,30 @@ const Registration = () => {
             <p><strong>• Number of seats :</strong> 200 seats</p>
             <p><strong>• Target Audience:</strong> Students from any stream and from any year</p>
             <p><strong>• Fees:</strong> <strike>Rs 1180</strike> 799/- (18% GST Included)</p>
-           <RegisterButton/>
+            <p><strong>• Fees:</strong> <strike>Rs 799</strike> 400/- (18% GST Included) (For Thapar Students)</p>
+            
+            <div 
+                className="d-flex justify-content-center align-items-center flex-column flex-md-row gap-2">
+              <div className="mb-2 mb-md-0">
+                <RegisterButton
+                  url="https://docs.google.com/forms/d/e/1FAIpQLSdCAQzqkVE7d52jLucXsZBzkVNx__dUB7FvhwYjFnIjer4beA/viewform?usp=sf_link"
+                  description="Register Now"
+                  newTab={true}
+                />
+              </div>
+              <div>
+                <RegisterButton
+                  url="https://docs.google.com/forms/d/e/1FAIpQLSdCAQzqkVE7d52jLucXsZBzkVNx__dUB7FvhwYjFnIjer4beA/viewform?usp=sf_link"
+                  description="Register Now (THAPAR STUDENTS)"
+                  newTab={true}
+                  style={{ fontSize: '14px' }}
+                />
+              </div>
+            </div>
+
           </div>
         </div>
 
-        {/* Three Step Process Section in Similar Box */}
         <div className="three-step-container">
           <h3 className="text-center">Three Step Process</h3>
           <ul className="steps-list">

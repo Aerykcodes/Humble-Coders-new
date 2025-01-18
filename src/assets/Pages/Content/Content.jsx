@@ -391,7 +391,9 @@ function Content() {
   <li><strong>Day 11:</strong> Firebase Integration</li>
   <li><strong>Day 12 & Day 13:</strong> Develop your Real-Time Chatting Application</li>
   <li><strong>Day 14 & Day 15:</strong> Notifications, Services, and Receivers</li>
-  <RegisterButton/>
+  <RegisterButton
+   url="/registration" description="Register Now" newTab={false}
+   />
   
   
 </ul>
@@ -422,7 +424,9 @@ function Content() {
               </div>
             ))}
           </div>
-          <RegisterButton/>
+          <RegisterButton 
+           url="/registration" description="Register Now" newTab={false}
+           />
         </div>
       </div>
       <SiteFooter />

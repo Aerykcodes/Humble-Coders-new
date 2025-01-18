@@ -30,7 +30,7 @@ function Home() {
         src={logo1}
         alt="Course banner"
         className="img-fluid responsive-logo"
-        style={{ maxWidth: '600px', height: 'auto', display: 'block', margin: '80px auto' }} // Adjust the size as needed
+        style={{ maxWidth: '350px', height: 'auto', display: 'block', margin: '70px auto' }} // Adjust the size as needed
       />
 
       <div className="homepage-container">
@@ -40,11 +40,13 @@ function Home() {
             <h3 className='textbox-0'><strong>With Kotlin and Jetpack Compose </strong></h3>
             <p className="text-center homepage-description"></p>
             <div className="course-details text-center">
-              <p className='textbox-1'><strong>2 Weeks training program <br />For beginners and experienced developers, UG/PG students</strong></p>
-              <p className='textbox-2'><strong>Last Registration Date - 10th January 2025</strong> <br /><strong>Course Starting Date: 14th January 2025</strong></p>
+              <p className='textbox-1'><strong>1 month training program <br />For beginners and experienced developers, UG/PG students</strong></p>
+              <p className='textbox-2'><strong>Last Registration Date - 10th January 2025</strong> <br /><strong>Course Starting Date: 1st February 2025</strong></p>
               <p className='textbox-3'><strong>Organized by: Humble Coders</strong></p>
             </div>
-            <RegisterButton />
+            <RegisterButton 
+            url="/registration" description="Register Now" newTab={false}
+            />
           </header>
         </div>
         <div className="box-wrapper container">
@@ -82,7 +84,7 @@ function Home() {
         <h3 className='text-center'>Previous Workshops and Feedback</h3>
         <div className="box-wrapper container">
           <div className="row">
-            <div className="col-12 col-md-6 d-flex flex-column align-items-center">
+            <div className="col-12 col-md-6 d-flex flex-column align-items-center align-left">
               <PieChart data={data1} />
               <h4 className="text-center mt-2">Knowledge and expertise of instructors</h4>
             </div>
