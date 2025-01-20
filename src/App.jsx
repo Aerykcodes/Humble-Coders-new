@@ -5,6 +5,7 @@ import Home from "./assets/Pages/Home/Home";
 import About from "./assets/Pages/About/About";
 import Registration from "./assets/Pages/Registration/Registration";
 import Contact from "./assets/Pages/Contact/Contact"
+import NewContent from "./assets/Pages/NewContent/NewContent";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/contact" element={<Contact />} />
+          {/* <Route path ="/temp" element={<NewContent/>} /> */}
         </Routes>
       </BrowserRouter>
     </div>

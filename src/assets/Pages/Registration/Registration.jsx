@@ -39,7 +39,7 @@ const Registration = () => {
                   url="https://docs.google.com/forms/d/e/1FAIpQLSeLXEWICzHdDFgtIsb66BOoDTIyoUAT4KnX44Cxn9525VcK8Q/viewform?usp=header"
                   description="Register Now (THAPAR STUDENTS)"
                   newTab={true}
-                  style={{ fontSize: '14px' }}
+                  style={{ fontSize: '0.8rem' }}
                 />
               </div>
             </div>
