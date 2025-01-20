@@ -100,6 +100,7 @@ function NewContent() {
         }
     ];
 
+
 return (
     <>
       <Navbar />
