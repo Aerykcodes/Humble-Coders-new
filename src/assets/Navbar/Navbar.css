@@ -9,7 +9,7 @@
   max-width: 1200px; /* Ensures navbar doesn’t get too wide */
   border-radius: 50px;
   align-self: center;
-  font-size: 14px;
+  font-size: 1rem;
   left: 50%; /* Centers the navbar */
   transform: translateX(-50%); /* Centers the navbar */
 }
@@ -98,6 +98,6 @@ body {
 /* Adjust font size for small screens */
 @media (max-width: 576px) {
   .navbar .navbar-nav .nav-item .nav-link {
-    font-size: 10px; /* Smaller font size for small screens */
+    font-size: 0.6rem; /* Smaller font size for small screens */
   }
 }
