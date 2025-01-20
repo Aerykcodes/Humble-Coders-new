@@ -53,8 +53,6 @@
 
 /* Hover effect: expanding the box and centering the text */
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  background-color: yellow;
-  border-radius: 20px;
   width: auto; /* Remove fixed width */
   padding: 5px 20px; /* Increase padding for a wider box */
   transition: all 0.3s ease;
@@ -98,6 +96,11 @@ body {
 /* Adjust font size for small screens */
 @media (max-width: 576px) {
   .navbar .navbar-nav .nav-item .nav-link {
-    font-size: 10px; /* Smaller font size for small screens */
+  width: auto; /* Remove fixed width */
+  padding: 5px 20px; /* Increase padding for a wider box */
+  transition: all 0.3s ease;
+  display: inline-block; /* Ensures box takes the size of the text */
+  text-align: center; /* Center the text inside the box */
+  font-size: 8px;
   }
 }
