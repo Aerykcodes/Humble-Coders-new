@@ -21,7 +21,7 @@
   border-radius: 8px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
   max-width: 100%; /* Allow it to be 100% width of its container */
-  width: 80%; /* Default width for larger screens */
+  width: 78%; /* Default width for larger screens */
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px; /* Adjusted margin-top value */
