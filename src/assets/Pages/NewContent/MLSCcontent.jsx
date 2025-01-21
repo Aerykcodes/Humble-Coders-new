@@ -89,7 +89,7 @@ const contentData = [
     ),
   },
   {
-    heading: 'Day 5: Completing the "Tweeting App"',
+    heading: 'Day 5: Deploying the "Tweeting App"',
     content: (
       <>
         <strong>Overview:</strong> Finish the Tweeting App by adding features to display and interact with tweets.<br />
