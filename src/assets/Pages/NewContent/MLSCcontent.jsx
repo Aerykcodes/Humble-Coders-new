@@ -113,9 +113,9 @@ const contentData = [
 function CourseDetails() {
   return (
     <header className="Course-title-box">
-      <h4 className="Course-heading-1">Course Details <br /></h4>
+      <h4 className="Course-heading-1">Workshop Details <br /></h4>
       <ul>
-      <li><strong>Date:</strong> 27th January 2025 PM</li>
+      <li><strong>Starts on:</strong> 27th January 2025 </li>
         <li><strong>Time:</strong> 5:30 to 7:30 PM</li>
         <li><strong>Mode:</strong> Offline</li>
         <li><strong>Pre-requisite:</strong> Basic understanding till if/else of any programming language</li>
@@ -126,7 +126,7 @@ function CourseDetails() {
         <li><strong>Day 2:</strong> Building the "CGPA Improver" App (Part 1)</li>
         <li><strong>Day 3:</strong> Finishing the "CGPA Improver" App</li>
         <li><strong>Day 4:</strong> Introduction to Firebase and Starting the "Tweeting App"</li>
-        <li><strong>Day 5:</strong> Completing the "Tweeting App"</li>
+        <li><strong>Day 5:</strong> Deploying the "Tweeting App"</li>
       </ul>
       <p><strong>Projects Included:</strong></p>
       <ul>
@@ -137,12 +137,11 @@ function CourseDetails() {
       <RegisterButton
         url="https://docs.google.com/forms/d/e/1FAIpQLSdKphT1w1pm3UurWnJCjlQkJUwP8yoldC5rheLDwiD1_ytqbw/viewform?usp=dialog"
         description="Register Now"
-        newTab={false}
+        newTab={true}
       />
     </header>
   );
 }
-
 // Main NewContent component
 function NewContent() {
   return (
@@ -157,7 +156,7 @@ function NewContent() {
       <div className="Course-content-container">
         <CourseDetails />
         <div className="Course-box-container container">
-          <h2 className="Course-schedule-heading">Course Schedule</h2>
+          <h2 className="Course-schedule-heading">Workshop Schedule</h2>
           <div className="row">
             {contentData.map((section, index) => (
               <div className="col-12" key={index}>
