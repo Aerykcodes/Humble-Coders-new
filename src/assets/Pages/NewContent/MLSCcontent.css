@@ -1,85 +1,90 @@
+/* MLSCcontent.css */
+.responsive-logo {
+  max-width: 23rem; /* Reduced size */
+  height: auto;
+  display: block;
+  margin: 5rem auto -2rem; /* Adjusted margin: top 20px, bottom 10px */
+}
+
 .Course-title-box {
-    max-width: 1200px;
-    margin: 10px auto;
-    padding: 20px;
-    background-color: #f7fbfe;
-    border-radius: 10px;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    margin-top: 110px; /* Increase this value to move the box further down */
-  }
-  .Course-heading-1 {
-    font-size: 30px;
-    text-align: center;
-  }
-  
-  .Course-box-container {
-    padding: 20px;
-    background-color: #d7edf7;
-    border-radius: 8px;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .Course-box-heading {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .Course-schedule-heading {
-    margin-top: 10px; 
-    text-align: center; /* Decrease the margin-top to reduce the space above the heading */
-  }
-  
-  .Course-heading-2 {
-    margin-top: 10px; 
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  /* This is the container for the registration button */
-  .registration-button-container {
-    display: flex;
-    justify-content: center; /* Centers the button horizontally */
-    align-items: center; /* Centers the button vertically */
-    top: 50%; /* Positions the button vertically in the middle */
-    left: 50%; /* Positions the button horizontally in the middle */
-    transform: translate(-50%, -50%); /* Adjusts the button's position to be exactly centered */
-    width: auto;
-    height: auto;
-  }
-  
-  /* The button itself */
-  .registration-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .registration-button:hover {
-    background-color: #45a049;
-  }
-  
-  .registration-button-1 {
-    margin-left: 550px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .registration-button-1:hover {
-    background-color: #45a049;
-  }
-  
-  .bottom-registration {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 20px;
+  background-color: #f7fbfe;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-top: 50px; /* Reduced margin-top to reduce the gap */
+}
+
+.Course-heading-1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.Course-box-container {
+  padding: 20px;
+  background-color: #d7edf7;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Course-box-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Course-schedule-heading {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.Course-heading-2 {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Registration button container */
+.registration-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+/* Registration button */
+.registration-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.registration-button:hover {
+  background-color: #45a049;
+}
+
+.registration-button-1 {
+  margin-left: 550px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.registration-button-1:hover {
+  background-color: #45a049;
+}
+
+.bottom-registration {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
