@@ -144,6 +144,6 @@
     max-width: 100%; /* Ensure the logo takes full width on extra small screens */
     margin: 10px auto; /* Center the image with an even smaller margin */
     left: -5px; /* Move slightly to the left */
-    transform: translateX(-7px); /* Fine-tune the position */
+    transform: translateX(0px); /* Fine-tune the position */
   }
 }
