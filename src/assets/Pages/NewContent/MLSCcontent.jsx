@@ -102,6 +102,7 @@ function NewContent() {
           <ul>
             <li><strong>Time:</strong> 5:30 to 7:30 PM</li>
             <li><strong>Mode:</strong> Offline</li>
+            <li><strong>Pre-requisite:</strong> Basic understanding till if/else of any programming language</li>
           </ul>
           <p><strong>Brief Schedule:</strong></p>
           <ul>
