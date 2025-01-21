@@ -8,6 +8,7 @@ import PieChart from './PieChart'; // Import PieChart component
 import RegisterButton from '../../RegisterButton/RegisterButton';
 import logo1 from './logo1.png';
 import MoreButton from './MoreButton';
+import logo2 from './mlscXhumbleCoders.png'
 
 const data1 = [
   { name: 'Excellent', value: 36.6 },
@@ -36,7 +37,7 @@ function Home() {
         <div className="col-md-6">
           <div className="text-center">
             <img
-              src={logo1}
+              src={logo2}
               alt="Course banner"
               className="img-fluid responsive-logo"
               style={{ maxWidth: '350px', height: 'auto', marginBottom: '20px' ,marginTop: '5rem'}}
