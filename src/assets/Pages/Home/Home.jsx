@@ -8,7 +8,7 @@ import PieChart from './PieChart'; // Import PieChart component
 import RegisterButton from '../../RegisterButton/RegisterButton';
 import logo1 from './logo1.png';
 import MoreButton from './MoreButton';
-import logo2 from './mlscXhumbleCoders.png'
+import logo2 from './logo2.png'
 
 const data1 = [
   { name: 'Excellent', value: 36.6 },
