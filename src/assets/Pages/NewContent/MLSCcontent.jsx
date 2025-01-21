@@ -5,6 +5,7 @@ import Navbar from '../../Navbar/Navbar'; // Import Navbar component
 import ContentBox from '../Content/ContentBox'; // Import ContentBox component
 import SiteFooter from '../../SiteFooter/SiteFooter';
 import RegisterButton from '../../RegisterButton/RegisterButton';
+import logo2 from '../Home/logo2.png';
 
 function NewContent() {
   const contentData = [
@@ -96,6 +97,12 @@ function NewContent() {
   return (
     <>
       <Navbar />
+       <img
+                    src={logo2}
+                    alt="Course banner"
+                    className="img-fluid responsive-logo"
+                    style={{ maxWidth: '350px', height: 'auto', }}
+                  />
       <div className="Course-content-container">
         <header className="Course-title-box">
           <h4 className="Course-heading-1">Course Details <br /></h4>
