@@ -372,9 +372,8 @@ function Content() {
         <h4 className="heading-1"> Course Details <br /> </h4>
 
 <ul>
-  <li><strong>Time :</strong> 6:00 to 8:00 PM </li>
-  <li><strong>Mode :</strong> Online </li>
-  <li><strong>Platform :</strong> Zoom </li>
+<li><strong> Mode:</strong> Recorded classes + Live doubt sessions + In-person discussion for Thapar Students</li>
+<li><strong>Validity :</strong> Lifetime</li>
 
 </ul>
 
