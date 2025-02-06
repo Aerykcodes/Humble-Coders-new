@@ -16,16 +16,16 @@
 
 .header-box-container {
   margin-bottom: 0px;
-  padding: 20px;
+  padding: 40px; /* Increased padding for more internal space */
   background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-  max-width: 100%; /* Allow it to be 100% width of its container */
-  width: 78%; /* Default width for larger screens */
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.15); /* Larger shadow for a more prominent effect */
+  width: 100%; /* Adjusted width to make the box bigger */
   margin-top: 0px; /* Adjusted margin-top value */
+  margin-left: auto;
+  margin-right: auto; /* Centered the box */
 }
+
 
 .header-box {
   text-align: center;
