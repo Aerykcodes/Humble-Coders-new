@@ -31,7 +31,7 @@ const HeaderSection = () => (
           alt="Course banner"
           className="img-fluid responsive-logo"
           style={{
-            maxWidth: '350px',
+            maxWidth: '320px',
             height: 'auto',
             marginBottom: '20px',
             marginTop: '5rem',
